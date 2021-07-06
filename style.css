@@ -1,0 +1,40 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+html{
+    font-size: 62,5%;
+}
+footer{
+    background-color: #282828;
+}
+#foot{
+    margin: auto;
+    width: 80%;
+    height: 30rem;
+    display: flexbox;
+}
+.angerone{
+    display: flex;
+    justify-content: center;
+}
+ul, p{
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    font-size: 1.1rem;
+}
+li{
+    list-style: none;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    color: white;
+}
+.site{
+    text-transform: uppercase;
+}
+.copy{
+    color: #898B7B;
+}

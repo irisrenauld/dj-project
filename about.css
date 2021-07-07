@@ -1,0 +1,20 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: 0%;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+div.présentationabout{
+    border: 2px solid green;
+    display: flex;
+}
+div.unabout{
+    border: 2px solid rgb(47, 0, 255);
+    display: inline-block;
+}
+div.deuxabout{
+    border: 2px solid rgb(255, 0, 179);
+    display: inline-block;
+}

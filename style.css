@@ -47,6 +47,17 @@ body {
     padding-left: 20%;
 }
 
+.header-subpages__link {
+    color: white;
+    text-decoration: none;
+}
+
+.header-subpages__linktop {
+    margin: 5%;
+    width: 10%;
+    font-size: 1vw;
+}
+
 .header-subpages__social {
     position: relative;
     display: flex;
@@ -59,7 +70,7 @@ body {
 
 .header-subpages__icontop {
     opacity: 50%;
-    font-size: 2rem;
+    font-size: 1vw;
 }
 
 .header-subpages__hamburger {
@@ -133,6 +144,173 @@ body {
 
 /* Header */
 
+/* Tour Table */
+
+.tour {
+    display: grid;
+    grid-template-columns: 1fr, repeat(3,1fr);
+    row-gap: 0px;
+    width: 80vw;
+    margin: 8% 15%;
+}
+
+.tour__tableheader {
+    content: '';
+    width: 100%;
+    background-color: #282828;
+    grid-row: 1/2;
+    border-radius: 10px 10px 0px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+.tour__tabnames {
+    grid-column: 2/4;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+
+.tour__month {
+    list-style: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1vw;
+    align-self: center;
+    padding: 2.5vw 0;
+    font-weight: 600;
+    opacity: 50%;
+    display: block;
+}
+
+.tour__month--selected {
+    opacity: 100%;
+    box-shadow: inset 0px -5px 0px #8121e0;
+}
+
+.tour__tablebody {
+    background-color: white;
+    grid-row: 2/4;
+    padding: 5vh;
+    border-bottom: 2px solid rgb(185, 185, 185);
+    border-left: 2px solid rgb(185, 185, 185);
+    border-right: 2px solid rgb(185, 185, 185);
+}
+
+.tour__tablecontent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.tour__info {
+    grid-column: 2/6;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: repeat(4, auto);
+    column-gap: 5%;
+}
+
+.tour__bulletpoint {
+    width: 1.5vw;
+    height: 1.5vw;
+    background-color: white;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    border: 1px solid rgb(185, 185, 185);
+    border-radius: 9999px;
+    position: relative;
+}
+
+.tour__bulletpoint::after {
+    content: '';
+    width: 40%;
+    height: 40%;
+    background-color: #8121e0;
+    border-radius: 9999px;
+    display: block;
+    margin: 30% 30%;
+    display: none;
+}
+
+.tour__info:hover  .tour__bulletpoint::after {
+    display: block;
+}
+.tour__bulletline {
+    content: '';
+    grid-row: 1/5;
+    grid-column: 1/2;
+    margin-left: 0.75vw;
+    width: 1px;
+    height: 100%;
+    background-color: rgb(185, 185, 185);
+}
+
+.tour__bulletline--top{
+    grid-row: 2/5;
+}
+
+.tour__bulletline--bottom {
+    grid-row: 1/2;
+}
+.tour__dates {
+    font-weight: 300;
+    opacity: 75%;
+    font-size: 1vw;
+    grid-column: 2/5;
+    margin-top: 3vw;
+}
+
+.tour__about {
+    grid-column: 2/4;
+    grid-row: 3/4;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.tour__location {
+    font-size: 1.5vw;
+    font-weight: 400;
+    grid-column: 2/4;
+    grid-row: 3/4;
+    align-self: center;
+}
+
+.tour__description {
+    font-weight: 300;
+    font-size: 0.75vw;
+    opacity: 75%;
+    margin: 2vh 0;
+    grid-column: 2/4;
+    grid-row: 4/5;
+}
+
+.tour__buylink {
+    grid-column: 4/5;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: 1vw;
+    font-weight: 500;
+    opacity: 90%;
+    position: relative;
+    grid-row: 3/4;
+    align-self: center;
+}
+
+.tour__buylink::after{
+    position: absolute;
+    top: 0.5vw;
+    right: -0.5vw;
+    content: '';
+    height: 0.75vw;
+    width: 0.75vw;
+    transform: rotate(-45deg);
+    box-shadow: 2px 2px 0px black, 3px 3px 0px rgb(255, 255, 255), 5px 5px 0px black;
+}
+
 footer{
     background-color: #282828;
  }
@@ -147,7 +325,7 @@ footer{
     display: flex;
     justify-content: center;
  }
- #footer, #social, p{
+ #footer, #social{
     margin: 2rem;
     display: flex;
     justify-content: center;

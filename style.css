@@ -226,12 +226,39 @@ body {
 }
 
 /* Tour Table */
- 
+ .hometourarticle {
+   padding: 6% 0%;
+   position: relative;
+ }
+
+ .hometourarticle::before {
+    content: '';
+    width: 1vw;
+    height: 2vw;
+    background-color: #8121e0;
+    position: absolute;
+    top: -1vw;
+    left: 16%;
+ } 
+ .hometourarticle::after {
+   content: '';
+   width: 1vw;
+   height: 2vw;
+   background-color: #8121e0;
+   position: absolute;
+   bottom: -1vw;
+   right: 16%;
+}
+
+ .hometourarticle__title {
+   text-align: center;
+ }
+
 .tour, .hometour {
     display: grid;
     grid-template-columns: 1fr, repeat(3,1fr);
     row-gap: 0px;
-    margin: 8% 15%;
+    margin: 2% 15%;
  }
   
  .tour__tableheader {

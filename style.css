@@ -154,15 +154,46 @@ body {
     grid-template-columns: 20% repeat(5, auto);
     grid-row: 4/5;
     background-color: #282828;
-    border-radius: 5px;
-    box-shadow: 0px 0px 3px black;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2vw black;
     position: relative;
     top: 50%;
-    align-items: center;
     column-gap: 3%;
+    padding: 3vw 3vw;
+}
+
+.homenext::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url(images/next-gig-bg.png);
+    background-position: center;
+    background-size: contain;
+    opacity: 50%;
+    z-index: 1;
+}
+
+.homenext__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+.homenext__item--text {
+    padding-right: 1vw;
 }
 
 .homenext__item--title {
+    font-size: 2vw;
+    font-weight: 500;
+}
+
+.homenext__item--detail {
+    font-size: 0.8vw;
 
 }
 
@@ -170,10 +201,13 @@ body {
     font-size: 4vw;
     font-weight: 500;
     text-align: center;
+    line-height: 4vw;
 }
 
 .homenext__item--timeunit {
      text-align: center;
+     font-size: 0.75vw;
+     font-weight: 500;
 }
 
 .homenext__btn {
@@ -181,11 +215,14 @@ body {
     border: none;
     color: white;
     border-radius: 5px;
-    padding: 1vw 2.5vw;
+    margin: 1vw 0vw;
+    padding: 1vw 2vw;
     text-transform: uppercase;
     font-weight: 700;
     font-family: Poppins, sans-serif;
     font-size: 0.8vw;
+    justify-self: normal;
+    z-index: 2;
 }
 
 /* Tour Table */

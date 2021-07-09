@@ -96,19 +96,36 @@ body {
     background-position: center;
     height: 90vh;
     padding: 3rem 15%;
+    padding-bottom: 0;
     color: white;
+    display: grid;
+    grid-template-rows: auto 1fr auto auto;
+    margin-bottom: 10%;
  }
  
  .homenewsingle {
      display: flex;
      flex-direction: column;
+     grid-row: 3/4;
+ }
+
+ .homenewsingle__title {
+    font-weight: 800;
+    font-size: 2.3vw;
+    margin-bottom: 1vw;
  }
 
  .homenewsingle__songname {
-    font-size: 7.5vw;
-    color: rgba(255, 0, 0, 0);
-    stroke: white 1px;
-    
+     width: 100%; 
+ }
+
+.homenewsingle__songname--transparent {
+     text-anchor: left;
+     font-size: 1px;
+     fill: none;
+     stroke-width: .015;
+     stroke: white;
+     font-weight: 700;
  }
 
 .homenewsingle__playsingle {
@@ -118,19 +135,59 @@ body {
     align-items: center;
 }
 
- .homenewsingle__playbutton {
+.homenewsingle__playbutton {
     width: 0;
     height: 0;
     border-style: solid;
     border-width: 0.5vw 0 0.5vw 0.75vw;
     border-color: transparent transparent transparent lightgray;
- }
+}
 
- .homenewsingle__progressbar {
-     height: 2px;
-     background-color: white;
-     opacity: 50%;
- }
+.homenewsingle__progressbar {
+    height: 2px;
+    background-color: white;
+    opacity: 50%;
+}
+
+.homenext {
+    display: grid;
+    grid-template-columns: 20% repeat(5, auto);
+    grid-row: 4/5;
+    background-color: #282828;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px black;
+    position: relative;
+    top: 50%;
+    align-items: center;
+    column-gap: 3%;
+}
+
+.homenext__item--title {
+
+}
+
+.homenext__item--number {
+    font-size: 4vw;
+    font-weight: 500;
+    text-align: center;
+}
+
+.homenext__item--timeunit {
+     text-align: center;
+}
+
+.homenext__btn {
+    background-color: #8121e0;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 1vw 2.5vw;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: Poppins, sans-serif;
+    font-size: 0.8vw;
+}
+
 /* Tour Table */
  
 .tour, .hometour {

@@ -13,49 +13,39 @@
 </head>
 <body>
 
-    <header>
-        <nav>
-            <section class="navtop">
-                <div class="navitem home">
-                    <figure class="logo-top"><img src="images/logo.png" alt="DJ Angerone Logo"></figure>
-                </div>
-                <ul class="navitem navlinkstop">
-                    <li class="navlinktop">About</li>
-                    <li class="navlinktop">Discography</li>
-                    <li class="navlinktop">Tours</li>
-                    <li class="navlinktop">Photos</li>
+    <header class="header-subpages">
+        <nav class="header-subpages__navtop">
+                <figure class="header-subpages__logo-header"><a href="index.html"><img src="images/logo.png" alt="DJ Angerone Logo"></a></figure>
+                <ul class="header-subpages__linkboxtop">
+                    <a class="header-subpages__link" href="about.html"><li class="header-subpages__linktop">About</li></a>
+                    <a class="header-subpages__link" href="disco.html"><li class="header-subpages__linktop">Discography</li></a>
+                    <a class="header-subpages__link" href="tour.html"><li class="header-subpages__linktop">Tours</li></a>
+                    <a class="header-subpages__link" href="gallery.html"><li class="header-subpages__linktop">Photos</li></a>
                 </ul>
-                <ul class="navitem naviconstop">
-                    <li class="navicontop"><i class="fab fa-facebook-f"></i></li>
-                    <li class="navicontop"><i class="fab fa-instagram"></i></li>
-                    <li class="navicontop"><i class="fab fa-twitter"></i></li>
-                    <li class="navicontop"><i class="fab fa-youtube"></i></li>
+                <ul class="header-subpages__social">
+                    <li class="header-subpages__icontop"><a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a></li>
+                    <li class="header-subpages__icontop"><a href="https://instagram.com"><i class="fab fa-instagram"></i></a></li>
+                    <li class="header-subpages__icontop"><a href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
+                    <li class="header-subpages__icontop"><a href="https://youtube.com"><i class="fab fa-youtube"></i></a></li>
+                    <li class="header-subpages__hamburger">
+                    <div class="header-subpages__hambar"></div>
+                    <div class="header-subpages__hambar"></div>
+                    <div class="header-subpages__hambar"></div>
+                    </li>
                 </ul>
-                <div class="navitem hamburger">
-                    <div class="hambartop hambar"></div>
-                    <div class="hambarmid hambar"></div>
-                    <div class="hambarbot hambar"></div>
+        </nav>
+        <div class="header-subpages__headerbox">
+            <div class="header-subpages__titlebox">
+                <h1 class="header-subpages__title">DISCOGRAPHY</h1>
+                <div class="header-subpages__subtitlebox">
+                    <h4 class="header-subpages__subtitle--big"><a href="index.html">HOME</a></h4>
+                    <div class="header-subpages__subtitle--point"></div>
+                    <h4 class="header-subpages__subtitle--small">DISCOGRAPHY</h4>
                 </div>
             </div>
-        </nav>
-    <div class="headerbox">
-        <p class="header">
-            <h1 class="pageheader">
-            TOUR SCHEDULE
-            </h1>
-        </p>
-        <div class="subtitle">
-            <h4 class="subtitlebig">
-            HOME
-            </h4>
-            <div class="subtitlepoint"></div>
-            <h4 class="subtitlesmall">
-            TOUR SCHEDULE
-            </h4>
         </div>
-        </div>
-    </div>
     </header>
+ 
  
 
  <section>
@@ -106,29 +96,30 @@
     </section> 
 
     <footer>
-        <section id="foot">
-        <div class="logofooter"><a href="index.html"><img src="./Resources/logo.png" alt="Logo DJ Angerone"></a></div>
-        <nav id="footer">
-            <ul>
-                <li class="site">about</li>
-                <li class="site">Discography</li>
-                <li class="site">Tours</li>
-                <li class="site">Photos</li>
-            </ul>
-        </nav>
-        <div id="social">
-            <ul>
-                <li class="socialefooter"><i class="fab fa-facebook-f"></i></li>
-                <li class="socialefooter"><i class="fab fa-instagram"></i></li>
-                <li class="socialefooter"><i class="fab fa-twitter"></i></li>
-                <li class="socialefooter"><i class="fab fa-youtube"></i></li>
-                <li class="socialefooter"><i class="fab fa-pinterest-p"></i></li>
-            </ul>
-        </div>
-        <p class="copy"><small>&copy; Angerone. Privacy Policy</small></p>
-    </section>
+        <section class="footer__sec">
+            <div class="footer__logo"><a href="index.html"><img src="./images/logo.png" alt="Logo DJ Angerone"></a></div>
+            <nav class="footer__nav">
+                <ul>
+                    <li class="footer__site"><a href="about.html">About</a> </li>
+                    <li class="footer__site"><a href="disco.html">Discography</li></a>
+                    <li class="footer__site"><a href="tour.html">Tours</li></a>
+                    <li class="footer__site"><a href="gallery.html">Photos</li></a>
+                </ul>
+            </nav>
+            <div class="footer__social">
+                <ul>
+                    <li class="footer__web"><button class="footer__btn"><a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a></button></li>
+                    <li class="footer__web"><button class="footer__btn"><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></button></li>
+                    <li class="footer__web"><button class="footer__btn"><a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a></button></li>
+                    <li class="footer__web"><button class="footer__btn"><a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a></button></li>
+                    <li class="footer__web"><button class="footer__btn"><a href="https://www.printerest.com"><i class="fab fa-pinterest-p"></i></a></button></li>
+                </ul>
+            </div>
+            <p class="footer__copy"><small>&copy; Angerone. Privacy Policy</small></p>
+        </section>
     </footer>
-  
+ 
+ 
  
 
 </body>

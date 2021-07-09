@@ -16,31 +16,86 @@ body{
     background-color: #282828;
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    margin: auto;
+    height: 55rem;
 }
 .homefanbase__photo{
     border: 1px solid red;
+    display: flexbox;
+    flex-wrap: wrap;
+}
+.homefanbase__photo1 img{
+    border-radius: 5px;
+    display: flex;
+    margin: 5rem;
+
+    justify-content: flex-end;
+}
+.homefanbase__photo2 img{
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.homefanbase__photo3 img{
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.homefanbase__photo4 img{
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+.homefanbase__photo5 img{
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.homefanbase__photo6 img{
+    border-radius: 5px;
     display: flex;
     flex-direction: column;
 }
 .homefanbase__text{
-    border: 1px solid green;
+    /* border: 1px solid green; */
     display: flex;
     flex-direction: column;
     justify-content: center;
+    row-gap: 3%;
     align-items: center;
-}
+}/* Done */
 .homefanbase__titre{
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     display: flex;
     flex-direction: column;
     color: white;
-}
+    width: 80%;
+}/* Done */
+.homefanbase__titre h1{
+    font-size: 2rem;
+}/* Done */
 .homefanbase__item{
-    border: 1px solid white;
-    display: flex;
-    flex-direction: column;
+    /* border: 1px solid white; */
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
     color: white;
-}
+    width: 75%;
+}/* Done */
+.homefanbase__i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}/* Done */
+.homefanbase__txt h2{
+    font-size: 1.5rem;
+    font-weight: 600;
+}/* Done */
+.homefanbase__txt p{
+    padding-top: 0.5rem;
+}/* Done */
+
 /*Tickets*/
 .hometickets{
     /* border: 1px solid black; */

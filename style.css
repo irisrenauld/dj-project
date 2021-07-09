@@ -35,3 +35,12 @@ img.imagesongmusiqueabout{
     width: 105%;
 }
 /* about */
+
+/* releases */
+.homerelease{
+    background-image: url(images/homepage-latest-releases-background.jpg);
+}
+div.homerelease__item{
+    text-align: center;
+}
+/* releases */

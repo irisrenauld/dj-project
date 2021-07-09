@@ -14,24 +14,110 @@ body{
 
 div.présentationabout{
     border: 2px solid green;
-    display: flex;
-    padding: 100px 400px 120px 120px;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 100px;
+
 }
 div.unabout{
-    border: 2px solid rgb(47, 0, 255);
-    display: inline-block;
+    /* border: 2px solid rgb(47, 0, 255); */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(8,auto);
+    width: 90%;
 }
 div.deuxabout{
-    border: 2px solid rgb(255, 0, 179);
-    display: inline-block;
-}
-img.imageabout{
-    width: 180%;
+    /* border: 2px solid rgb(255, 0, 179); */
+    display: flex;
+    width: auto;
+    padding-bottom: 30px;
 }
 h1.titreabout{
     font-size: 2.2rem;
     font-weight: 500;
+    padding: 0px 0px 20px 0px;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
+div.hrabout{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    height: 1px;
+    background-color: gray;
+    
+}
+ul.contactabout{
+    display: flex;
+    flex-direction: row;
+    grid-column: 1/3;
+    grid-row: 3/4;
+}
+ul li{
+    list-style: none;
+}
+i.fas.fa-phone::before{
+    color: rgb(201, 201, 201);
+    grid-column: 1/2;
+}
+i.far.fa-envelope::before{
+    color: rgb(201, 201, 201);
+}
+li.contacttelabout{
+    padding: 20px 30px 0px 0px;
+    
+}
+li.contactenvlopabout{
+    padding: 20px 0px 0px 0px;
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+ul.logoabout{
+    display: flex;
+    flex-direction: row;
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+li.facabout{
+    padding: 20px 28px 20px 0px;
+    font-size: 20px;
+}
+li.instabout{
+    padding: 20px 28px 20px 0px;
+    font-size: 20px;
+}
+li.twitabout{
+    padding: 20px 28px 20px 0px;
+    font-size: 20px;
+}
+li.youabout{
+    padding: 20px 28px 20px 0px;
+    font-size: 20px;
+}
+p.texteunabout{
+    grid-column: 1/5;
+    grid-row: 6/5;
+}
+p.textedeuxabout{
+    font-style: italic;
+    grid-column: 1/5;
+    grid-row: 7/6;
+}
+img.signatureabout{
+    grid-column: 4/5;
+    grid-row: 8/7;
+}
+button.buttonabout{
+    color: white;
+    background-color: rgb(126, 44, 233);
+    border: px solid #cccccc;
+    border-radius: 2px;
+    grid-column: 1/2;
+    grid-row: 9/8;
+    height: 60px;
+    width: 60%;
+    justify-content: center;
+}
+
 
 
 

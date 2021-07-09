@@ -1,10 +1,37 @@
-Stephanie
-Stephanie
-stephanie
-stephanie
-stephanie
-THOMAS
-THOMAS
-THOMAS
-THOMAS
-THOMAS
+/* about */
+.homemusique{
+    /*border: 2px solid red;*/
+    background-color: white;
+    text-align: center;
+    display: flexbox;
+    justify-content: space-around;
+    padding: 150px 0px 0px 0px;
+    height: 50rem;
+}
+div.homemusique__item{
+    /*border: 2px solid blue;*/
+    display: inline-block;
+    margin: 50px 23px 0px 23px;
+}
+h1.titremusiqueabout{
+    font-size: 2.2rem;
+    padding: 0px 0px 10px 0px;
+}
+h2.titresongmusiqueabout{
+    font-weight: 500;
+}
+p.paramusiqueabout{
+    color: gray;
+    font-weight: 300;
+}
+div.textesongmusiqueabout{
+    padding: 10px 0px 0px 0px;
+}
+p.parasongmusiqueabout{
+    font-weight: 250;
+    font-size: 0.9rem;
+}
+img.imagesongmusiqueabout{
+    width: 105%;
+}
+/* about */

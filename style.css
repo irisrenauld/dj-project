@@ -79,13 +79,13 @@ body {
     justify-content: space-between;
     align-items: flex-end;
     position: relative;
-    height: 2.5rem;
+    height: 1.5vw;
     padding-left: 15%;
 }
 
 .header-subpages__hambar {
     height: 2px;
-    width: 4rem;
+    width: 2vw;
     background-color: white;
 }
 

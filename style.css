@@ -1,4 +1,9 @@
-/* Tour Table */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+/* Tour Table  */
  
 .tour, .hometour {
     display: grid;
@@ -163,5 +168,67 @@
     width: 0.75vw;
     transform: rotate(-45deg);
     box-shadow: 2px 2px 0px black, 3px 3px 0px rgb(255, 255, 255), 5px 5px 0px black;
+ }
+/*footer*/
+footer{
+    background-color: #282828;
+    width: auto;
+ }
+ .footer__sec{
+    margin: auto;
+    height: 30rem;
+    display: flexbox;
+ }
+ .footer__logo{
+    padding-top: 6rem;
+    display: flex;
+    justify-content: center;
+ }
+ .footer__nav, .footer__social, .footer__copy{
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+ }
+ .footer__web{
+    list-style: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    color: white;
+ }
+ .footer__site{
+    list-style: none;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    color: white;
+    text-transform: uppercase;
+ }
+ .footer__site a{
+    color: white;
+    text-decoration: none;
+ }
+ .footer__web i{
+    position: relative;
+    margin: auto;
+    justify-content: space-around;
+    color: white;
+ }
+ .footer__web a{
+    text-decoration: none;
+    font-size: 1.3rem;
+ }
+ .footer__btn{
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #2C2C2C;
+ }
+ .footer__copy{
+    color: #898B7B;
  }
  

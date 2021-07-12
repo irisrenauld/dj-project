@@ -47,7 +47,7 @@ body{
     border-radius: 5px;
     display: flex;
     justify-content: flex-end;
-    width: 105%;
+    width: 109%;
 } /*Done*/
 .homefanbase__photo4, .homefanbase__photo4 img{
     border-radius: 5px;
@@ -483,6 +483,7 @@ footer{
      align-items: center;
      color: white;
      text-align: center;
-     font-size: 1.5rem;
+     font-size: 1rem;
+     font-weight: 600;
      line-height: 55px;
- }
+}

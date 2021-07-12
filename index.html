@@ -14,11 +14,13 @@
 </head>
 
 <body>
-    <header class="header-subpages">
+    <header class="header-subpages header-main">
         <nav class="header-subpages__navtop">
-                <figure class="header-subpages__logo-header"><a href="index.html"><img src="images/logo.png" alt="DJ Angerone Logo"></a></figure>
+                <figure class="header-subpages__logo-header"><a href="index.html"><img class="header-subpages__logoimg" src="images/logo.png" alt="DJ Angerone Logo"></a></figure>
+                <input type="checkbox" id="hamburger" title="navigation menu">
+                <input type="checkbox" id="socialmedias" title="social media menu">
                 <ul class="header-subpages__linkboxtop">
-                    <li class="header-subpages__linktop"><a class="header-subpages__link" href="about.html">About</a></li>
+                    <a class="header-subpages__link" href="about.html"><li class="header-subpages__linktop">About</li></a>
                     <a class="header-subpages__link" href="disco.html"><li class="header-subpages__linktop">Discography</li></a>
                     <a class="header-subpages__link" href="tour.html"><li class="header-subpages__linktop">Tours</li></a>
                     <a class="header-subpages__link" href="gallery.html"><li class="header-subpages__linktop">Photos</li></a>
@@ -29,11 +31,20 @@
                     <li class="header-subpages__icontop"><a href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
                     <li class="header-subpages__icontop"><a href="https://youtube.com"><i class="fab fa-youtube"></i></a></li>
                 </ul>
+                <label class="hamburgermenu" for="hamburger">
                 <div class="header-subpages__hamburger">
                     <div class="header-subpages__hambar"></div>
                     <div class="header-subpages__hambar"></div>
                     <div class="header-subpages__hambar"></div>
                 </div>
+            </label>
+            <label class="socialmediamenu" for="socialmedias">
+                <div class="header-subpages__dotmenu">
+                    <div class="header-subpages__dot"></div>
+                    <div class="header-subpages__dot"></div>
+                    <div class="header-subpages__dot"></div>
+                </div>
+            </label>
         </nav>
         <section class="homenewsingle">
             <h1 class="homenewsingle__title">New Single</h1>
@@ -49,19 +60,19 @@
                 <h1 class="homenext__item--title">Next Gig</h1>
                 <p class="homenext__item--detail">Tickets for my next event are already available.</p>
             </div>
-            <div class="homenext__item">
+            <div class="homenext__item homenext__item--days">
                 <h1 class="homenext__item--number">41</h1>
                 <p class="homenext__item--timeunit">DAYS</p>
             </div>
-            <div class="homenext__item">
+            <div class="homenext__item homenext__item--hours">
                 <h1 class="homenext__item--number">23</h1>
                 <p class="homenext__item--timeunit">HOURS</p>
             </div>
-            <div class="homenext__item">
+            <div class="homenext__item homenext__item--minutes">
                 <h1 class="homenext__item--number">59</h1>
                 <p class="homenext__item--timeunit">MINUTES</p>
             </div>
-            <div class="homenext__item">
+            <div class="homenext__item homenext__item--seconds">
                 <h1 class="homenext__item--number">26</h1>
                 <p class="homenext__item--timeunit">SECONDS</p>
             </div>

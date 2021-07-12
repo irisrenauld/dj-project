@@ -1240,7 +1240,7 @@ button.homerelease__btn{
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(4,auto);
         background-color: white;
-        padding: 50px 0px 100px 100px;
+        padding: 3.1rem 0rem 6.25rem 6.25rem;
         position: relative;
     }
     .homeabout::after{
@@ -1257,33 +1257,41 @@ button.homerelease__btn{
         grid-row: 1/4;
         border: 5px solid none;
         border-radius: 10px;
-        margin: 30px 50px 0px 200px;
-        width: 60%;
+        width: 100%;
+        max-width: auto;
+        max-height: auto;
+        object-fit: cover;
     }
-    .homeabout__photo::before{
+    .imagehomeabout__sudo{ /* fixe sur l'image les before et after*/
+        display: inline-block;
+        margin: 1.9rem 3.1rem 0rem 12.5rem;
+        max-width: 35rem;
+        position: relative;
+    }
+    .imagehomeabout__sudo::before{
         content: '';
         width: 1vw;
         height: 2vw;
         background-color: #8121e0;
         position: absolute;
-        top: 1vw;
-        left: 32%;
+        top: -1vw;
+        left: 7%;
     }
     .homeabout__photo{
         position:relative;
     }
-    .homeabout__photo::after{
+    .imagehomeabout__sudo::after{
         content: '';
         width: 0.5vw;
         height: 2vw;
         border-left: #8121e0 0.5vw solid;
         border-right: #8121e0 0.5vw solid;
         position: absolute;
-        right: 14%;
-        bottom: 0.5vw;
+        right: 4%;
+        bottom: -0.5vw;
     }
     div.homeabout__text{
-        margin: 0px 230px 0px 40px;
+        margin: 0rem 14.4rem 0rem 2.5rem;
     }
     h1.homeabout__item{
         grid-column: 2/2;
@@ -1294,12 +1302,12 @@ button.homerelease__btn{
     p.homeabout__item{
         font-weight: 200;
         font-size: 0.85rem;
-        padding: 10px 0px 0px 0px ;
+        padding: 0.6rem 0rem 0rem 0rem ;
     }
     p.homeabout__items{
         font-weight: 200;
         font-size: 1.5rem;
-        margin: 0px 0px 0px 20px;
+        margin: 0rem 0rem 0rem 1.25rem;
         padding-top: 5%;
         padding-bottom: 5%;
     }

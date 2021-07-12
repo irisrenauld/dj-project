@@ -152,7 +152,7 @@ section{
     padding: 0;
 }
 div.containerdisco{
-    background-color: white;
+   background-color: rgb(235, 235, 235);
     color: black;
     text-align: center;
     display: flexbox;

@@ -21,6 +21,17 @@ body{
     column-gap: 5%;
     margin: auto;
     height: 55rem;
+    position: relative;
+}
+.homefanbase::before{
+    content: '';
+    width: 0.5vw;
+    height: 2vw;
+    border-left: #8121e0 0.5vw solid;
+    border-right: #8121e0 0.5vw solid;
+    position: absolute;
+    right: 15%;
+    top: -1vw;
 }
 /* Gauche */
 .homefanbase__photo{
@@ -1031,6 +1042,15 @@ footer{
     width: auto;
     position: relative;
 }
+footer::before{
+    content: '';
+    width: 1vw;
+    height: 2vw;
+    background-color: #8121e0;
+    position: absolute;
+    top: -1vw;
+    left: 16%;
+}
  .footer__sec{
     margin: auto;
     height: 30rem;
@@ -1182,6 +1202,16 @@ margin: 0% 13%;
     height: 100%;
     z-index: -1;
 }
+.homerelease::before{
+    content: '';
+    width: 0.5vw;
+    height: 2vw;
+    border-left: #8121e0 0.5vw solid;
+    border-right: #8121e0 0.5vw solid;
+    position: absolute;
+    left: 15%;
+    bottom: -1vw;
+}
 div.homerelease__item{
     text-align: center;
     color: white;
@@ -1211,6 +1241,16 @@ button.homerelease__btn{
         grid-template-rows: repeat(4,auto);
         background-color: white;
         padding: 50px 0px 100px 100px;
+        position: relative;
+    }
+    .homeabout::after{
+        content: '';
+        width: 1vw;
+        height: 2vw;
+        background-color: #8121e0;
+        position: absolute;
+        bottom: -1vw;
+        right: 16%;
     }
     img.imagehomeabout{
         grid-column: 1/2;
@@ -1219,6 +1259,28 @@ button.homerelease__btn{
         border-radius: 10px;
         margin: 30px 50px 0px 200px;
         width: 60%;
+    }
+    .homeabout__photo::before{
+        content: '';
+        width: 1vw;
+        height: 2vw;
+        background-color: #8121e0;
+        position: absolute;
+        top: 1vw;
+        left: 32%;
+    }
+    .homeabout__photo{
+        position:relative;
+    }
+    .homeabout__photo::after{
+        content: '';
+        width: 0.5vw;
+        height: 2vw;
+        border-left: #8121e0 0.5vw solid;
+        border-right: #8121e0 0.5vw solid;
+        position: absolute;
+        right: 14%;
+        bottom: 0.5vw;
     }
     div.homeabout__text{
         margin: 0px 230px 0px 40px;
@@ -1278,6 +1340,7 @@ button.homerelease__btn{
     height: 100%;
     z-index: -1;
     }
+    
     div.homesub__head{
         text-align: center;
         color: white;

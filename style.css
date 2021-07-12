@@ -1,11 +1,21 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: 0%;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+
+}
+
 /* about */
 .homemusique{
-    /*border: 2px solid red;*/
+    /* border: 2px solid red; */
     background-color: white;
     text-align: center;
     display: flexbox;
     justify-content: space-around;
-    padding: 150px 0px 0px 0px;
+    padding: 100px 0px 50px 0px;
     height: 50rem;
 }
 div.homemusique__item{
@@ -25,11 +35,12 @@ p.paramusiqueabout{
     font-weight: 300;
 }
 div.textesongmusiqueabout{
-    padding: 10px 0px 0px 0px;
+    padding: 30px 0px 10px 0px;
 }
 p.parasongmusiqueabout{
     font-weight: 250;
     font-size: 0.9rem;
+    margin: 0px 0px 0px 0px ;
 }
 img.imagesongmusiqueabout{
     width: 105%;
@@ -38,58 +49,129 @@ img.imagesongmusiqueabout{
 
 /* releases */
 .homerelease{
+    height: 25rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+.homerelease::after{
     background-image: url(images/homepage-latest-releases-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(50%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }
 div.homerelease__item{
     text-align: center;
+    color: white;
+}
+h1.homereleas__item{
+    font-weight: 500;
+    padding: 0px 0px 30px 0px ;
+}
+div.homerelease__pad{
+    padding: 150px 0px 0px 0px;
 }
 button.homerelease__btn{
-    background-color: blueviolet;
-    border: 5px solid blueviolet;
+    background-color: #8121e0;
+    border: 5px solid #8121e0;
     border-radius: 2px;
     padding: 5px 13px ;
+    color: white;
+    font-family: 'Poppins', sans-serif;
 }
 /* releases */
 
 /* disco */
     section.homeabout{
-        border: 2px solid red;
+        /* border: 2px solid red; */
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(4,auto);
         background-color: white;
+        padding: 50px 0px 100px 100px;
     }
     img.imagehomeabout{
         grid-column: 1/2;
         grid-row: 1/4;
         border: 5px solid none;
         border-radius: 10px;
-        margin: 0px 0px 0px 200px;
+        margin: 30px 50px 0px 200px;
+        width: 60%;
     }
     div.homeabout__text{
-        margin: 0px 250px 0px 40px;
+        margin: 0px 200px 0px 40px;
     }
     h1.homeabout__item{
         grid-column: 2/2;
         grid-row: 1/2;
-        font-size: 2.2rem;
+        font-size: 2rem;
+        font-weight: 700;
     }
     p.homeabout__item{
-        font-weight: 300;
+        font-weight: 200;
+        font-size: 0.85rem;
+        padding: 10px 0px 0px 0px ;
     }
-    q.homeabout__item{
+    p.homeabout__items{
+        font-weight: 200;
         font-size: 1.5rem;
-        font-weight: 300;
+        margin: 0px 0px 0px 20px;
+    }
+    .homeabout__items{
+        position: relative;
+    }
+    .homeabout__items::after{
+        position: absolute;
+        color: #8021e048;
+        content: '"';
+        top: -0.8rem;
+        left: -2.3rem;
+        font-size: 15rem;
+        line-height: 15rem;
+        font-style: oblique;
     }
 /* disco */
 
 /* subscribe */
     section.homesub{
-        background-image: url(images/homepage-footer-background.jpg);
+        height: 30rem;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: relative;
+    }
+    .homesub::after{
+    background-image: url(images/homepage-footer-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(50%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    z-index: -1;
     }
     div.homesub__head{
-        font-size: 1.5rem;
         text-align: center;
+        color: white;
+        padding: 180px 0px 0px 0px ;
+    }
+    h1.homesub__head{
+        font-weight: 600;
+        padding: 0px 0px 30px 0px ;
+        font-size: 2rem;
     }
     div.homesub__form{
         display: grid;
@@ -104,5 +186,21 @@ button.homerelease__btn{
     div.homesub__btn{
         grid-column: 2/2;
         grid-row: 1/2;
+    }
+    input.homesub__button{
+        background-color: #8121e0;
+        border: 5px solid #8121e0;
+        border-radius: 5px;
+        color: white;
+        padding: 10px 20px;
+        font-family: 'Poppins', sans-serif;
+    }
+    input.homesub__mail{
+        padding: 10px 250px 10px 0px;
+        margin: 0px 15px 0px 0px ;
+        border: 5px solid white;
+        border-radius: 5px;
+        text-align: start;
+        font-family: 'Poppins', sans-serif;
     }
 /* subscribe */

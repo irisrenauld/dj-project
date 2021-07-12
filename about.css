@@ -194,12 +194,20 @@ ul.contactabout{
 ul li{
     list-style: none;
 }
+.contacttelabout{
+    font-family: 'Poppins', sans-serif;
+}
+.contactenvlopabout{
+    font-family: 'Poppins', sans-serif;
+}
 i.fas.fa-phone::before{
     color: rgb(201, 201, 201);
     grid-column: 1/2;
+    padding: 0px 10px 0px 0px;
 }
 i.far.fa-envelope::before{
     color: rgb(201, 201, 201);
+    padding: 0px 10px 0px 0px ;
 }
 li.contacttelabout{
     padding: 20px 30px 0px 0px;

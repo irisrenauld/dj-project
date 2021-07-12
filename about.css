@@ -1,0 +1,216 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: 0%;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+
+
+div.présentationabout{
+    border: 2px solid green;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 100px;
+
+}
+div.unabout{
+    /* border: 2px solid rgb(47, 0, 255); */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(8,auto);
+    width: 90%;
+}
+div.deuxabout{
+    /* border: 2px solid rgb(255, 0, 179); */
+    display: flex;
+    width: auto;
+    padding-bottom: 30px;
+}
+h1.titreabout{
+    font-size: 2.2rem;
+    font-weight: 500;
+    padding: 0px 0px 20px 0px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+div.hrabout{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    height: 1px;
+    background-color: gray;
+    
+}
+ul.contactabout{
+    display: flex;
+    flex-direction: row;
+    grid-column: 1/3;
+    grid-row: 3/4;
+}
+ul li{
+    list-style: none;
+}
+i.fas.fa-phone::before{
+    color: rgb(201, 201, 201);
+    grid-column: 1/2;
+}
+i.far.fa-envelope::before{
+    color: rgb(201, 201, 201);
+}
+li.contacttelabout{
+    padding: 20px 30px 0px 0px;
+    
+}
+li.contactenvlopabout{
+    padding: 20px 0px 0px 0px;
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+ul.logoabout{
+    display: flex;
+    flex-direction: row;
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+li.facabout{
+    padding: 20px 28px 20px 0px;
+    font-size: 20px;
+}
+li.instabout{
+    padding: 20px 28px 20px 0px;
+    font-size: 20px;
+}
+li.twitabout{
+    padding: 20px 28px 20px 0px;
+    font-size: 20px;
+}
+li.youabout{
+    padding: 20px 28px 20px 0px;
+    font-size: 20px;
+}
+p.texteunabout{
+    grid-column: 1/5;
+    grid-row: 6/5;
+}
+p.textedeuxabout{
+    font-style: italic;
+    grid-column: 1/5;
+    grid-row: 7/6;
+}
+img.signatureabout{
+    grid-column: 4/5;
+    grid-row: 8/7;
+}
+button.buttonabout{
+    color: white;
+    background-color: rgb(126, 44, 233);
+    border: px solid #cccccc;
+    border-radius: 2px;
+    grid-column: 1/2;
+    grid-row: 9/8;
+    height: 60px;
+    width: 60%;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+div.choixabout{
+    /*border:2px solid coral;*/
+    background-image: url(images/bg-circle-2.png);
+    background-color:rgb(240, 240, 240);
+    background-position: center;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+    align-content: center;
+    justify-items: center;
+    height: 40rem;
+    row-gap: 14%;
+    padding: 0 50px;
+}
+div.listechoixabout{
+    /*border: 2px solid blue;*/
+    justify-content: space-around;
+    display: flex;
+    width: 90%;
+    font-weight: 250;
+}
+div.textechoixabout{
+    /*border: 2px solid rgb(0, 255, 76);*/
+    display: flex;
+    flex-direction: column;
+}
+div.logochoixabout{
+    /*border: 2px solid purple;*/
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 0px 30px;
+    color: rgb(103, 0, 177);
+}
+div.grostitrechoixabout{
+    grid-column: 1/4;
+    display: flex;
+}
+div.grostitrechoixabout{
+    font-size: 1.7rem;
+}
+h1.titrechoixabout{
+    padding: 0px 0px 10px 0px;
+    font-weight: 450;
+}
+
+
+
+
+
+div.musiqueabout{
+    /*border: 2px solid red;*/
+    background-color: white;
+    text-align: center;
+    display: flexbox;
+    justify-content: space-around;
+    padding: 150px 0px 0px 0px;
+    height: 50rem;
+}
+div.songmusiqueabout{
+    /*border: 2px solid blue;*/
+    display: inline-block;
+    margin: 50px 23px 0px 23px;
+}
+h1.titremusiqueabout{
+    font-size: 2.2rem;
+    padding: 0px 0px 10px 0px;
+}
+h2.titresongmusiqueabout{
+    font-weight: 500;
+}
+p.paramusiqueabout{
+    color: gray;
+    font-weight: 300;
+}
+div.textesongmusiqueabout{
+    padding: 10px 0px 0px 0px;
+}
+p.parasongmusiqueabout{
+    font-weight: 250;
+    font-size: 0.9rem;
+}
+img.imagesongmusiqueabout{
+    width: 105%;
+}

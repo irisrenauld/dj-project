@@ -1391,3 +1391,48 @@ button.homerelease__btn{
         font-family: 'Poppins', sans-serif;
     }
 /* subscribe */
+/* aboutresponsive */
+@media only screen and (min-width: 768px){
+    .homeabout{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto auto;
+    }
+    .homeabout__photo{
+        grid-column: 1/2;
+        grid-row: 1/3;
+    }
+
+    .imagehomeabout__sudo{
+        width: 90%;
+        
+    }
+    h1.homeabout__item{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        font-size: 0.5rem;
+    }
+    p.homeabout__item{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        font-size: 0.5rem;
+    }
+    p.homeabout__items{
+        grid-column: 2/3;
+        grid-row: 3/4;
+        font-size: 0.5rem;
+    }
+    
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 320px){
+
+}
+/* aboutresponsive */

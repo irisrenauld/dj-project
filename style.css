@@ -16,7 +16,7 @@ body {
  
 .header-subpages__navtop {
     display: grid;
-    grid-template-columns: 1fr repeat(3, 1fr);
+    grid-template-columns: 1fr repeat(3, 1fr) auto;
     grid-auto-rows: 1fr;
     column-gap: 3%;
  }
@@ -72,10 +72,13 @@ body {
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
+    justify-self: center;
+    align-self: center;
     align-items: flex-end;
     position: relative;
     height: 1.5vw;
     padding-left: 15%;
+
  }
   
  .header-subpages__hambar {
@@ -224,6 +227,8 @@ body {
     justify-self: normal;
     z-index: 2;
 }
+
+/* Header */
 
 /* Tour Table */
  .hometourarticle {

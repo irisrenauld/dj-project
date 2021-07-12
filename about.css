@@ -6,17 +6,155 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
+html{
+    font-size: 62,5%;
+ }
+ 
 
-
+.header-subpages__subtitle--big a, .header-subpages__logo-header a, .header-subpages__icontop a, .header-subpages__linktop a {
+    text-decoration: none;
+    color: white;
+ }
+  
+ /* Navbar */
+  
+ .header-subpages__navtop {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) auto;
+    grid-auto-rows: 1fr;
+    column-gap: 3%;
+ }
+  
+ .header-subpages__logo-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    grid-column: 1/2;
+ }
+  
+ .header-subpages__linkboxtop {
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    grid-column: 2/4;
+    list-style: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    padding-left: 20%;
+ }
+  
+ .header-subpages__link {
+    color: white;
+    text-decoration: none;
+ }
+  
+ .header-subpages__linktop {
+    margin: 5%;
+    width: 10%;
+    font-size: 1vw;
+ }
+  
+ .header-subpages__social {
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    grid-column: 4/5;
+    list-style: none;
+ }
+  
+ .header-subpages__icontop {
+    opacity: 50%;
+    font-size: 1vw;
+ }
+  
+ .header-subpages__hamburger {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-self: center;
+    align-self: center;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: relative;
+    height: 1.5vw;
+    padding-left: 15%;
+    grid-column: 5/6;
+ }
+  
+ .header-subpages__hambar {
+    height: 2px;
+    width: 2vw;
+    background-color: white;
+ }
+  
+ /* Header */
+  
+ .header-subpages {
+    background-image: url(images/banner-img.jpg);
+    background-color: blueviolet;
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 3rem 15%;
+    color: white;
+    height: 60vh;
+ }
+  
+ .header-subpages__headerbox {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 90%;
+ }
+  
+ .header-subpages__title {
+    font-size: 3vw;
+    text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
+    margin: 2rem;
+ }
+  
+ .header-subpages__subtitlebox {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8vw;
+ }
+  
+ .header-subpages__subtitle--big {
+    font-weight: 500;
+ }
+  
+ .header-subpages__subtitle--small {
+    font-weight: 500;
+    opacity: 50%;
+ }
+  
+ .header-subpages__subtitle--point {
+    content: '';
+    background-color: yellow;
+    height: 0.3vw;
+    width: 0.3vw;
+    border-radius: 9999px;
+    margin: 0.8vw;
+ }
+  
+ /* Header */
+ 
 
 
 
 
 div.présentationabout{
-    border: 2px solid green;
+    /* border: 2px solid green; */
     display: grid;
     grid-template-columns: auto auto;
-    margin: 100px;
+    margin: 100px 250px 100px 150px;
 
 }
 div.unabout{
@@ -29,18 +167,19 @@ div.unabout{
 div.deuxabout{
     /* border: 2px solid rgb(255, 0, 179); */
     display: flex;
-    width: auto;
     padding-bottom: 30px;
+    width: 110%;
+    flex-direction: column;
 }
 h1.titreabout{
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     font-weight: 500;
     padding: 0px 0px 20px 0px;
-    grid-column: 1/2;
+    grid-column: 1/5;
     grid-row: 1/2;
 }
 div.hrabout{
-    grid-column: 1/2;
+    grid-column: 1/3;
     grid-row: 2/3;
     height: 1px;
     background-color: gray;
@@ -49,7 +188,7 @@ div.hrabout{
 ul.contactabout{
     display: flex;
     flex-direction: row;
-    grid-column: 1/3;
+    grid-column: 1/5;
     grid-row: 3/4;
 }
 ul li{
@@ -64,12 +203,14 @@ i.far.fa-envelope::before{
 }
 li.contacttelabout{
     padding: 20px 30px 0px 0px;
+    font-family: 'Poppins', sans-serif;
     
 }
 li.contactenvlopabout{
     padding: 20px 0px 0px 0px;
     grid-column: 1/2;
     grid-row: 3/4;
+    font-family: 'Poppins', sans-serif;
 }
 ul.logoabout{
     display: flex;
@@ -96,26 +237,31 @@ li.youabout{
 p.texteunabout{
     grid-column: 1/5;
     grid-row: 6/5;
+    font-weight: 300;
 }
 p.textedeuxabout{
     font-style: italic;
     grid-column: 1/5;
     grid-row: 7/6;
+    padding: 25px 0px 0px 0px;
 }
 img.signatureabout{
     grid-column: 4/5;
     grid-row: 8/7;
+    padding: 0px 20px 0px 0px ;
 }
 button.buttonabout{
     color: white;
-    background-color: rgb(126, 44, 233);
-    border: px solid #cccccc;
-    border-radius: 2px;
+    background-color: #8121e0;
+    border: 5px solid #8121e0;
+    border-radius: 6px;
     grid-column: 1/2;
     grid-row: 9/8;
-    height: 60px;
-    width: 60%;
+    height: 59px;
+    width: 90%;
+    font-weight: 600;
     justify-content: center;
+    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -214,3 +360,68 @@ p.parasongmusiqueabout{
 img.imagesongmusiqueabout{
     width: 105%;
 }
+
+
+/*footer*/
+footer{
+    background-color: #282828;
+    width: auto;
+ }
+ .footer__sec{
+    margin: auto;
+    height: 30rem;
+    display: flexbox;
+ }
+ .footer__logo{
+    padding-top: 6rem;
+    display: flex;
+    justify-content: center;
+ }
+ .footer__nav, .footer__social, .footer__copy{
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+ }
+ .footer__web{
+    list-style: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    color: white;
+ }
+ .footer__site{
+    list-style: none;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    color: white;
+    text-transform: uppercase;
+ }
+ .footer__site a{
+    color: white;
+    text-decoration: none;
+ }
+ .footer__web i{
+    position: relative;
+    margin: auto;
+    justify-content: space-around;
+    color: white;
+ }
+ .footer__web a{
+    text-decoration: none;
+    font-size: 1.3rem;
+ }
+ .footer__btn{
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #2C2C2C;
+ }
+ .footer__copy{
+    color: #898B7B;
+ }
+ 

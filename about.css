@@ -150,6 +150,9 @@ html{
 
 
 
+
+
+
 div.présentationabout{
     /* border: 2px solid green; */
     display: grid;
@@ -360,6 +363,7 @@ h2.titresongmusiqueabout{
 p.paramusiqueabout{
     color: gray;
     font-weight: 300;
+    padding: 0px 380px ;
 }
 div.textesongmusiqueabout{
     padding: 10px 0px 0px 0px;
@@ -436,3 +440,339 @@ footer{
     color: #898B7B;
  }
  
+
+
+
+
+
+@media only screen and (max-width: 768px){
+    /* partie 1 */
+  div.présentationabout{
+      grid-template-rows: auto auto;
+      grid-template-columns: auto;
+      margin: 50px 30px;
+      padding: 0;
+      justify-content: center;
+  }
+  div.unabout{
+      justify-content: center;
+      width: 100%;
+      padding: 0px 0px 50px 0px;
+  }
+  div.deuxabout{
+      width: 100%;
+      justify-content: center;
+      margin: 0px 0px 0px 20px ;
+  }
+  img.imageabout{
+      width: 75%;
+  }
+  h1.titreabout{
+      font-size: 1.4rem;
+  }
+  div.hrabout{
+    grid-column: 1/1;
+    grid-row: 2/3;
+  }
+    /* partie 1 */
+    /* partie 2 */
+    div.choixabout{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto auto;
+        padding: 0;
+        margin:  0;
+        height: 41rem;
+        grid-gap: 7%;
+    }
+    div.listechoixabout{
+       display: flex;
+    }
+    div.grostitrechoixabout{
+        grid-column: 1/3;
+        font-size: 1rem;
+    }
+    p.parachoixabout{
+        font-size: 0.9rem ;
+        font-weight: 300;
+    }
+    h1.titrechoixabout{
+        font-size: 1.4rem;
+    }
+    /* partie 2 */
+    /* partie 3 */
+    p.paramusiqueabout{
+        color: gray;
+        font-weight: 300;
+        padding: 0px 100px ;
+        grid-column: 1/3;
+        font-size: 0.9rem;
+    }
+    h1.titremusiqueabout{
+        font-size: 1.7rem;
+        padding: 0;
+        margin: 0;
+        grid-column: 1/3;
+    }
+    div.musiqueabout{
+        margin: 85px 20px 300px 20px;
+        padding: 0px ;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto;
+    }
+    img.imagesongmusiqueabout{
+        width: 100%;
+        justify-content: center;
+    }
+    #testeabout{
+        width: 104%;
+    }
+    div.songmusiqueabout{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+    /* partie 3 */
+}
+
+
+
+
+@media only screen and (max-width: 320px){
+     /* partie 1 */
+  div.présentationabout{
+    grid-template-rows: auto auto !important;
+    grid-template-columns: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    grid-gap: 4%;
+    background-color: white;
+  }
+  div.unabout{
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    grid-template-rows: repeat(8,auto) !important;
+    padding: 0px 10px;
+}
+div.deuxabout{
+    display: flex !important;
+    flex-direction: column !important;
+    margin: 0;
+    padding: 0px 10px 100px 10px;
+}
+img.imageabout{
+    width: 100%;
+}
+h1.titreabout{
+    font-size: 1rem!important;
+    padding: 30px 0px 15px 0px;
+    font-weight: 500 !important;
+    grid-column: 1/2 !important;
+    grid-row: 1/2 !important;
+}
+div.hrabout{
+    grid-column: 1/2 !important;
+    grid-row: 2/3 !important;
+    height: 1px !important;
+    background-color: gray !important;
+}
+ul.contactabout{
+    
+    flex-direction: column !important;
+    display: block !important;
+    grid-column: 1/2 !important;
+    grid-row: 3/4 !important;
+    padding: 0;
+    height: 10rem;
+}
+ul li{
+    list-style: none;
+}
+.contacttelabout{
+    font-family: 'Poppins', sans-serif;
+    display: block;
+    flex-direction: row;
+}
+.contactenvlopabout{
+    font-family: 'Poppins', sans-serif;
+    display: block;
+    flex-direction: row;
+}
+i.fas.fa-phone::before{
+    color: rgb(201, 201, 201);
+    grid-column: 1/2;
+    padding: 0px 10px 0px 0px;
+}
+i.far.fa-envelope::before{
+    color: rgb(201, 201, 201);
+    padding: 0px 10px 0px 0px ;
+}
+li.contacttelabout{
+    /* padding: 20px 30px 0px 0px; */
+    font-family: 'Poppins', sans-serif;
+}
+li.contactenvlopabout{
+    /* padding: 20px 0px 0px 0px; */
+    font-family: 'Poppins', sans-serif;
+}
+ul.logoabout{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    grid-column: 1/2 !important;
+    grid-row: 3/4 !important;
+    padding: 0;
+}
+li.facabout{
+    flex-direction: column !important;
+    display: block !important;
+    grid-column: 1/2 !important;
+    grid-row: 3/4 !important;
+    font-size: 20px;
+}
+li.instabout{
+    flex-direction: column !important;
+    display: block !important;
+    grid-column: 1/2 !important;
+    grid-row: 3/4 !important;
+    font-size: 20px;
+}
+li.twitabout{
+    flex-direction: column !important;
+    display: block !important;
+    grid-column: 1/2 !important;
+    grid-row: 3/4 !important;
+    font-size: 20px;
+}
+li.youabout{
+    flex-direction: column !important;
+    display: block !important;
+    grid-column: 1/2 !important;
+    grid-row: 3/4 !important;
+    font-size: 20px;
+}
+p.texteunabout{
+    grid-column: 1/3;
+    grid-row: 6/5;
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+p.textedeuxabout{
+    font-style: italic;
+    grid-column: 1/3;
+    grid-row: 7/6;
+    padding: 25px 0px 0px 0px;
+    font-weight: 300;
+    font-size: 1rem;
+}
+img.signatureabout{
+    grid-column: 2/3;
+    grid-row: 8/7;
+    padding: 0;
+    width: 90%;
+}
+button.buttonabout{
+    color: white;
+    background-color: #8121e0;
+    border: 5px solid #8121e0;
+    border-radius: 6px;
+    grid-column: 1/2;
+    grid-row: 9/8;
+    height: 44px;
+    width: 68%;
+    font-weight: 600;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+  /* partie 1 */
+  /* partie 2 */
+  div.choixabout{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto ;
+    margin:  auto;
+    margin-left: 1rem;
+    justify-content: center;
+    height: 41rem;
+    grid-gap: 7%;
+    vertical-align: auto;
+    padding: 200px 10px 200px 4px;
+    width: 100%;
+    grid: center;
+}
+div.listechoixabout{
+   display: flex;
+   flex-direction: column;
+   align-content: center;
+}
+div.grostitrechoixabout{
+    grid-column: 1/2;
+    font-size: 0.9rem;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+p.parachoixabout{
+    font-size: 0.9rem ;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+h1.titrechoixabout{
+    font-size: 1.4rem;
+    text-align: center;
+}
+.logochoixabout{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+/* partie 2 */
+/* partie 3 */
+p.paramusiqueabout{
+    color: gray;
+    font-weight: 300;
+    padding: 0px 10px ;
+    /* grid-column: 1/4; */
+    font-size: 0.8rem;
+    margin: 0px 0px ;
+}
+h1.titremusiqueabout{
+    font-size: 1.7rem;
+    padding: 0;
+    margin: 0;
+    /* grid-column: 1/4; */
+}
+div.musiqueabout{
+    padding: 300px 20px 300px 20px;
+    margin: 0px ;
+    /* display: grid;
+    grid-template-columns: auto ;
+    grid-template-rows: auto auto auto auto ; */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+img.imagesongmusiqueabout{
+    width: 100%;
+    justify-content: center;
+}
+#testeabout{
+    width: 100%;
+    justify-content: center;
+}
+div.songmusiqueabout{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+/* partie 3 */
+}

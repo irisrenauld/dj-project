@@ -7,6 +7,7 @@ body{
     font-family: 'Poppins', sans-serif;
     font-weight:300;
     display: swap;
+    position: relative;
 }
 
 /* Home Fanbase*/
@@ -224,88 +225,188 @@ body{
 } /* Done */
 
 /* Home Gallery */
-.homegallery__photo1{
-    width: 100%;
-}
 .homegallery{
-    display: grid;
-    grid-template-columns: repeat(6, 0.5fr);
-    grid-template-rows: repeat(2, 1fr);
-}
-.homegallery__itemh{
-    grid-column: repeat(3, 1fr);
-}
-.homegallery__itemb{
-    grid-row: 2/3;
-}
-.homegallery__itemh::after{ /* Bouton ZOOM gallery haut*/
-    content: "zoom";
-    display: none;
-    position: absolute;
-    margin: auto;
-    font-size: 1.4rem;
-    text-align: center;
-    vertical-align: middle;
-    line-height: 100px;
-    width: 100px;
-    height: 100px;
-    border: 15px solid rgba(255, 255, 255, .200);
-    background-clip: padding-box; 
-    border-radius: 50%;
-    background-color: white;
-}
-.homegallery__itemh:hover::after{
-    display: block;
-}
-.homegallery__itemb::after{ /* Bouton ZOOM gallery basse*/
-    content: "zoom";
-    display: none;
-    position: absolute;
-    margin: auto;
-    font-size: 1.4rem;
-    text-align: center;
-    vertical-align: middle;
-    line-height: 100px;
-    width: 100px;
-    height: 100px;
-    border: 15px solid rgba(255, 255, 255, .200);
-    background-clip: padding-box; 
-    border-radius: 50%;
-    background-color: white;
-}
-.homegallery__itemb:hover::after{
-    display: block;
+    display: grid; 
+    grid-auto-rows: 1fr; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 22rem 22rem; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+    "photo1 photo1 photo2 photo2 photo3 photo3"
+    "photo4 photo4 photo4 photo5 photo5 photo5";
 }
 
-/* Bouton scroll*/
-.scroll{
+.homegallery__itemh1{
+    grid-area: photo1;
+}
+.homegallery__itemh2{
+    grid-area: photo2;
+}
+.homegallery__itemh3{
+    grid-area: photo3;
+}
+.homegallery__itemb1{
+    grid-area: photo4;
+}
+.homegallery__itemb2{
+    grid-area: photo5;
+}
+.homegallery__itemh1,.homegallery__itemh2,.homegallery__itemh3{
+    position: relative;
+}
+.homegallery__itemb1,.homegallery__itemb2{
+    grid-row: 2/3;
+    position: relative;
+}
+.homegallery__photo1{
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    margin-right: 2%;
-    margin-bottom: 2%;
+    position: relative;
+    width: 100%;
+    height: 110%;
+    max-width: auto;
+    max-height: auto;
+    object-fit: cover;
+}
+.homegallery__photo2{
+    display: flex;
+    width: 100%;
+    height: 101%;
+    max-width: auto;
+    max-height: auto;
+    object-fit: cover;
+}
+.homegallery__photo3{
+    display: flex;
+    width: 100%;
+    height: 101%;
+    max-width: auto;
+    max-height: auto;
+    object-fit: cover;
+}
+.homegallery__photo4{
+    display: flex;
+    width: 100%;
+    height: 99%;
+    max-width: auto;
+    max-height: auto;
+    object-fit: cover;
+}
+.homegallery__photo5{
+    display: flex;
+    width: 100%;
+    height: 99%;
+    max-width: auto;
+    max-height: auto;
+    object-fit: cover;
+    position: relative;
+}
+.homegallery__itemh1::after{ /* Bouton ZOOM gallery haut*/
+    content: "zoom";
+    display: none;
     position: absolute;
+    top: 30%;
+    left: 33%;
+    font-size: 1.4rem;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100px;
+    width: 100px;
+    height: 100px;
+    border: 15px solid rgba(255, 255, 255, .200);
+    background-clip: padding-box; 
+    border-radius: 50%;
+    background-color: white;
 }
-.scroll__btn{
-    border: 1px solid #8121e0;
-    border-radius: 5px;
-    background-color: #8121e0;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.1rem;
-    color: white;
-    height: 3rem;
-    width: 3rem;
+.homegallery__itemh1:hover::after{
+    display: block;
 }
-.scroll__btn a{
-    text-decoration: none;
-    color: white;
+.homegallery__itemh2::after{ /* Bouton ZOOM gallery haut*/
+    content: "zoom";
+    display: none;
+    position: absolute;
+    top: 30%;
+    left: 33%;
+    font-size: 1.4rem;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100px;
+    width: 100px;
+    height: 100px;
+    border: 15px solid rgba(255, 255, 255, .200);
+    background-clip: padding-box; 
+    border-radius: 50%;
+    background-color: white;
+}
+.homegallery__itemh2:hover::after{
+    display: block;
+}
+.homegallery__itemh3::after{ /* Bouton ZOOM gallery haut*/
+    content: "zoom";
+    display: none;
+    position: absolute;
+    top: 30%;
+    left: 33%;
+    font-size: 1.4rem;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100px;
+    width: 100px;
+    height: 100px;
+    border: 15px solid rgba(255, 255, 255, .200);
+    background-clip: padding-box; 
+    border-radius: 50%;
+    background-color: white;
+}
+.homegallery__itemh3:hover::after{
+    display: block;
+}
+.homegallery__itemb1::after{ /* Bouton ZOOM gallery basse*/
+    content: "zoom";
+    display: none;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    font-size: 1.4rem;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100px;
+    width: 100px;
+    height: 100px;
+    border: 15px solid rgba(255, 255, 255, .200);
+    background-clip: padding-box; 
+    border-radius: 50%;
+    background-color: white;
+}
+.homegallery__itemb1:hover::after{
+    display: block;
+}
+.homegallery__itemb2::after{ /* Bouton ZOOM gallery basse*/
+    content: "zoom";
+    display:none;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    font-size: 1.4rem;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100px;
+    width: 100px;
+    height: 100px;
+    border: 15px solid rgba(255, 255, 255, .200);
+    background-clip: padding-box; 
+    border-radius: 50%;
+    background-color: white;
+}
+.homegallery__itemb2:hover::after{
+    display: block;
 }
 
 /*footer*/
 footer{
     background-color: #282828;
     width: auto;
- }
+    position: relative;
+}
  .footer__sec{
     margin: auto;
     height: 30rem;
@@ -364,3 +465,24 @@ footer{
     color: #898B7B;
  }
  
+ /* Bouton scroll*/
+.scroll {
+    content: "";
+    height: 55px;
+    width: 55px;
+    background-color: #8121e0;
+    border-radius: 5px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+ }
+ .scroll a{
+     display: flex;
+     text-decoration: none;
+     justify-content: center;
+     align-items: center;
+     color: white;
+     text-align: center;
+     font-size: 1.5rem;
+     line-height: 55px;
+ }

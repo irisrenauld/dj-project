@@ -508,7 +508,7 @@ footer{
    }
    /*Tour Table*/
 
-   .tour {
+   .tour, .hometour {
       margin: 5rem 1.25rem;
    }
 

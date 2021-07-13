@@ -1765,6 +1765,44 @@ button.homerelease__btn{
         display: flex;
         justify-content: center;
     }
+    .homenews {
+        margin: 0;
+        height: min-content;
+    }
+    .homenews__item {
+        position: absolute;
+        width: 95vw;
+        overflow: hidden;
+        box-sizing: border-box;
+        margin: 2.5vw;
+    }
+    .homenews {
+        height: 25rem;
+    }
+    .homenews__itemcontainer .slide-in {
+        transform: translate3d(-100vw, 0, 0);
+        transition: transform 1s ease-out;
+        z-index: 1;
+    }
+    .homenews__itemcontainer .slide-in:target, .homepartners__logo .slide-in:focus {
+        transform: translate3d(0,0,0);
+        z-index: 2;
+    }
+    .homenews__itemcontainer .slide-in:target ~ .slide-in {
+        transform: translate3d(-100vw,0,0);
+    }
+    .homenews__carousel {
+        z-index: 5;
+        display: flex;
+        justify-content: center;
+    }
+    .homenews__head {
+        font-size: 3rem;
+    }
+    .homenews__carouseldot {
+        width: 1rem;
+        height: 1rem;
+    }
  
  }
  
@@ -1959,10 +1997,37 @@ button.homerelease__btn{
         height: min-content;
     }
     .homenews__item {
-        position: relative;
+        position: absolute;
         width: 95vw;
         overflow: hidden;
         box-sizing: border-box;
         margin: 2.5vw;
+    }
+    .homenews {
+        height: 25rem;
+    }
+    .homenews__itemcontainer .slide-in {
+        transform: translate3d(-100vw, 0, 0);
+        transition: transform 1s ease-out;
+        z-index: 1;
+    }
+    .homenews__itemcontainer .slide-in:target, .homepartners__logo .slide-in:focus {
+        transform: translate3d(0,0,0);
+        z-index: 2;
+    }
+    .homenews__itemcontainer .slide-in:target ~ .slide-in {
+        transform: translate3d(-100vw,0,0);
+    }
+    .homenews__carousel {
+        z-index: 5;
+        display: flex;
+        justify-content: center;
+    }
+    .homenews__head {
+        font-size: initial;
+    }
+    .homenews__carouseldot {
+        width: 1rem;
+        height: 1rem;
     }
  }

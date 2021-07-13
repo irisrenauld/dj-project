@@ -10,6 +10,33 @@ body{
     position: relative;
 }
 
+.homepartners__logo {
+    overflow: hidden;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    justify-items: center;
+}
+
+.homepartners__logo .slide-in {
+    transform: translate3d(-90vw, 0, 0);
+    transition: transform 1s ease-out;
+    z-index: 1;
+}
+.homepartners__logo .slide-in:target, .homepartners__logo .slide-in:focus {
+    transform: translate3d(0,0,0);
+    z-index: 2;
+}
+.homepartners__logo .slide-in:target ~ .slide-in {
+    transform: translate3d(-90vw,0,0);
+}
+.homepartners__item {
+    position: absolute;
+}
+.homepartners__carousel {
+    z-index: 5;
+    padding-top: 1rem;
+}
 /* Home Fanbase*/
 .homefanbase{
     /* border: 1px solid black; */

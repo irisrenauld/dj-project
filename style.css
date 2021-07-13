@@ -1002,7 +1002,6 @@ body{
 }
 
 .homenews__titre {
-   padding-right: 2vw;
    font-weight: 500;
 }
 
@@ -1013,7 +1012,7 @@ body{
 .homenews__link {
    text-decoration: none;
    color: inherit;
-   font-size: 0.9vw;
+   font-size: 0.75rem;
 }
 .homenews__carousel {
    grid-column: 1/4;
@@ -1775,7 +1774,7 @@ button.homerelease__btn{
         position: relative;
         display: grid;
         justify-items: center;
-        "height: 5rem;
+        height: 5rem;
         padding: 0;
     }
     .homepartners__item img {
@@ -1954,5 +1953,16 @@ button.homerelease__btn{
        height: 0.46875rem;
        top: 0.5rem;
        right: -0.3125rem;
+    }
+    .homenews {
+        margin: 0;
+        height: min-content;
+    }
+    .homenews__item {
+        position: relative;
+        width: 95vw;
+        overflow: hidden;
+        box-sizing: border-box;
+        margin: 2.5vw;
     }
  }

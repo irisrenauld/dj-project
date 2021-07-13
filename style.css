@@ -135,6 +135,9 @@ body{
     height: auto;
     grid-template-columns: 1fr;
     }
+    .homefanbase::before{
+        display: none;
+    }
     .homefanbase__photo{
         align-items: center;
         margin-top: 7%;
@@ -1913,3 +1916,23 @@ button.homerelease__btn{
         }
     }
 /* subscribe */
+@media only screen and (max-width:786px){
+    .homerelease::before{
+       display: none;
+    }
+    .hometourarticle::before {
+      display: none;
+     } 
+     .hometourarticle::after {
+        display: none;
+     }
+     .homepartners::before {
+        display: none;
+     }
+     .homenews::after {
+        display: none;
+     }
+     footer::before{
+        display: none;
+    }
+}

@@ -2031,3 +2031,156 @@ button.homerelease__btn{
         height: 1rem;
     }
  }
+/* aboutresponsive */
+@media only screen and (max-width: 768px){
+    .homeabout{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto auto;
+        padding: 0 !important;
+        margin: 0px 30px 50px 0px ;
+    }
+    .homeabout::after{
+        display: none;
+    }
+    div.homeabout__text{
+        padding: 0px 50px 0px 0px ;
+        margin: 0;
+    }
+    .homeabout__photo{
+        grid-column: 1/2;
+        grid-row: 1/3;
+        margin: 0;
+        padding: 0 0px 0px 50px;
+        align-content: center;
+    }
+
+    .imagehomeabout__sudo{
+        width: 80%;
+        padding: 0;
+        margin: 0;
+    }
+    h1.homeabout__item{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        font-size: 1rem;
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    p.homeabout__item{
+        font-weight: 200;
+        font-size: 0.8rem;
+        padding: 0 ;
+    }
+    p.homeabout__items{
+        font-weight: 200;
+        font-size: 1.2rem;
+        margin: 0;
+        padding: 0px 0px 0px 15px ;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+    .homeabout__items{
+        position: relative;
+    }
+    .homeabout__items::after{
+        position: absolute;
+        color: #8021e048;
+        content: '"';
+        top: -3.5rem;
+        left: -0.9rem;
+        font-size: 7rem;
+        line-height: 15rem;
+        font-style: oblique;
+    }
+    .imagehomeabout__sudo{ /* fixe sur l'image les before et after*/
+        display: inline-block;
+        margin: 0;
+    }
+    .imagehomeabout__sudo::before{
+        display: none;
+    }
+    .imagehomeabout__sudo::after{
+        display: none;
+    }
+    
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 320px){
+    .homeabout{
+        display: grid;
+        grid-template-columns:none !important;
+        grid-template-rows: auto auto auto auto;
+        padding: 0 !important;
+        margin: 0 ;
+    }
+    div.homeabout__text{
+        padding: 0px 0px 30px 20px ;
+        margin: 0;
+    }
+    .homeabout__photo{
+        grid-column: 1/2;
+        grid-row: 1/3;
+        margin: 0;
+        padding: 0 0px 10px 20px;
+        align-content: center;
+    }
+
+    .imagehomeabout__sudo{
+        width: 95%;
+        padding: 0;
+        margin: 0;
+    }
+    h1.homeabout__item{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        font-size: 1rem;
+        grid-column: 2/3;
+        grid-row: 1/2;
+        
+    }
+    p.homeabout__item{
+        font-weight: 200;
+        font-size: 0.8rem;
+        padding: 0 ;
+    }
+    p.homeabout__items{
+        font-weight: 200;
+        font-size: 1.2rem;
+        margin: 0;
+        padding: 0px 0px 0px 15px ;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+    .homeabout__items{
+        position: relative;
+    }
+    .homeabout__items::after{
+        position: absolute;
+        color: #8021e048;
+        content: '"';
+        top: -3.5rem;
+        left: -0.9rem;
+        font-size: 7rem;
+        line-height: 15rem;
+        font-style: oblique;
+    }
+    .imagehomeabout__sudo{ /* fixe sur l'image les before et after*/
+        display: inline-block;
+        margin: 0;
+    }
+    .imagehomeabout__sudo::before{
+        display: none;
+    }
+    .imagehomeabout__sudo::after{
+        display: none;
+    }
+}
+/* aboutresponsive */

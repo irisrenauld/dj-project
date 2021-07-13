@@ -92,7 +92,7 @@ In the CSS, we had chosen to use Grid to place the content as wanted. Our grid h
 
 Responsive:
 ----------
-
+An easy one to make. We've changed the grid-template-columns to the right number and the gap.  
 
 Tour Schedule page:
 ===================

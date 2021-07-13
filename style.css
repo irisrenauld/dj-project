@@ -503,7 +503,7 @@ footer{
    /*Tour Table*/
 
    .tour, .hometour {
-      margin: 5rem 1.25rem;
+      margin: 5rem 0;
    }
 
    .tour__month {

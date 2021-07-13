@@ -1400,6 +1400,9 @@ button.homerelease__btn{
         padding: 0 !important;
         margin: 0px 30px 50px 0px ;
     }
+    .homeabout::after{
+        display: none;
+    }
     div.homeabout__text{
         padding: 0px 50px 0px 0px ;
         margin: 0;

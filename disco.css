@@ -253,10 +253,6 @@ footer{
 .footer__copy{
    color: #898B7B;
 }
-
-
-
-
 @media screen and (max-width: 768px) {
    .homenewsingle {
        margin: 10rem 0;

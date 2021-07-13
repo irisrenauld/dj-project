@@ -12,107 +12,99 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Dj's Angerone - Home page</title>
 </head>
+
 <body>
-    <header class="header-subpages">
-        <nav class="header-subpages__navtop">
-            <figure class="header-subpages__logo-header"><a href="index.html"><img src="images/logo.png" alt="DJ Angerone Logo"></a></figure>
-            <ul class="header-subpages__linkboxtop">
-                <a class="header-subpages__link" href="about.html"><li class="header-subpages__linktop">About</li></a>
-                <a class="header-subpages__link" href="disco.html"><li class="header-subpages__linktop">Discography</li></a>
-                <a class="header-subpages__link" href="tour.html"><li class="header-subpages__linktop">Tours</li></a>
-                <a class="header-subpages__link" href="gallery.html"><li class="header-subpages__linktop">Photos</li></a>
-            </ul>
-            <ul class="header-subpages__social">
-                <li class="header-subpages__icontop"><a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a></li>
-                <li class="header-subpages__icontop"><a href="https://instagram.com"><i class="fab fa-instagram"></i></a></li>
-                <li class="header-subpages__icontop"><a href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
-                <li class="header-subpages__icontop"><a href="https://youtube.com"><i class="fab fa-youtube"></i></a></li>
-                <li class="header-subpages__hamburger">
-                <div class="header-subpages__hambar"></div>
-                <div class="header-subpages__hambar"></div>
-                <div class="header-subpages__hambar"></div>
-                </li>
-            </ul>
+    <header class="header-home header-main">
+        <nav class="header-home__navtop">
+                <figure class="header-home__logo-header"><a href="index.html"><img class="header-home__logoimg" src="images/logo.png" alt="DJ Angerone Logo"></a></figure>
+                <input type="checkbox" id="hamburger" title="navigation menu">
+                <input type="checkbox" id="socialmedias" title="social media menu">
+                <ul class="header-home__linkboxtop">
+                    <a class="header-home__link" href="about.html"><li class="header-home__linktop">About</li></a>
+                    <a class="header-home__link" href="disco.html"><li class="header-home__linktop">Discography</li></a>
+                    <a class="header-home__link" href="tour.html"><li class="header-home__linktop">Tours</li></a>
+                    <a class="header-home__link" href="gallery.html"><li class="header-home__linktop">Photos</li></a>
+                </ul>
+                <ul class="header-home__social">
+                    <li class="header-home__icontop"><a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a></li>
+                    <li class="header-home__icontop"><a href="https://instagram.com"><i class="fab fa-instagram"></i></a></li>
+                    <li class="header-home__icontop"><a href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
+                    <li class="header-home__icontop"><a href="https://youtube.com"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+                <label class="hamburgermenu" for="hamburger">
+                <div class="header-home__hamburger">
+                    <div class="header-home__hambar"></div>
+                    <div class="header-home__hambar"></div>
+                    <div class="header-home__hambar"></div>
+                </div>
+            </label>
+            <label class="socialmediamenu" for="socialmedias">
+                <div class="header-home__dotmenu">
+                    <div class="header-home__dot"></div>
+                    <div class="header-home__dot"></div>
+                    <div class="header-home__dot"></div>
+                </div>
+            </label>
         </nav>
+        <section class="homenewsingle">
+            <h1 class="homenewsingle__title">New Single</h1>
+            <svg class="homenewsingle__songname" viewbox="0 0 9 1.1"><text class="homenewsingle__songname--transparent" x="0" y="0.75">Feel the Rythm</text></svg>
+            <div class="homenewsingle__playsingle">
+                <div class="homenewsingle__playbutton"></div>
+                <div class="homenewsingle__progressbar"></div>
+                <div class="homenewsingle__timer">00:00-04:27</div>
+            </div>
+        </section>
+        <section class="homenext">
+            <div class="homenext__item homenext__item--text">
+                <h1 class="homenext__item--title">Next Gig</h1>
+                <p class="homenext__item--detail">Tickets for my next event are already available.</p>
+            </div>
+            <div class="homenext__item homenext__item--days">
+                <h1 class="homenext__item--number">41</h1>
+                <p class="homenext__item--timeunit">DAYS</p>
+            </div>
+            <div class="homenext__item homenext__item--hours">
+                <h1 class="homenext__item--number">23</h1>
+                <p class="homenext__item--timeunit">HOURS</p>
+            </div>
+            <div class="homenext__item homenext__item--minutes">
+                <h1 class="homenext__item--number">59</h1>
+                <p class="homenext__item--timeunit">MINUTES</p>
+            </div>
+            <div class="homenext__item homenext__item--seconds">
+                <h1 class="homenext__item--number">26</h1>
+                <p class="homenext__item--timeunit">SECONDS</p>
+            </div>
+                <button class="homenext__btn">Buy Tickets</button>
+        </section>
     </header>
 
     <main>
-        <section class="homenext">
-            <div class="homenext__item">
-                <h1>Next Gig</h1>
-                <p>Tickets for my next event are already available.</p>
-            </div>
-            <div class="homenext__item">
-                <h1>41</h1>
-                <p>DAYS</p>
-            </div>
-            <div class="homenext__item">
-                <h1>23</h1>
-                <p>HOURS</p>
-            </div>
-            <div class="homenext__item">
-                <h1>59</h1>
-                <p>MINUTES</p>
-            </div>
-            <div class="homenext__item">
-                <h1>26</h1>
-                <p>SECONDS</p>
-            </div>
-            <div class="homenext__item">
-                <button class="homenext__btn">Buy Tickets</button>
-            </div>
-        </section>
-        
-        <!--<section>
-            <ul>
-                <li class="homenext__item">
-                    <h1>Next Gig</h1>
-                    <p>Tickets for my next event are already available.</p>
-                </li>
-                <li class="homenext__item">
-                    <h1>41</h1>
-                    <p>DAYS</p>
-                </li>
-                <li class="homenext__item">
-                    <h1>23</h1>
-                    <p>HOURS</p>
-                </li>
-                <li class="homenext__item">
-                    <h1>59</h1>
-                    <p>MINUTES</p>
-                </li>
-                <li class="homenext__item">
-                    <h1>26</h1>
-                    <p>SECONDS</p>
-                </li>
-                <li class="homenext__item">
-                    <button class="homenext__btn">Buy Tickets</button>
-                </li>
-            </ul>
-        </section>    
-        -->
-
+       
         <section class="homeabout">
             <div class="homeabout__photo">
-                <img src="./images/home-dj.jpg" alt="DJ Angerone">
+                <div class="imagehomeabout__sudo">
+                <img class="imagehomeabout" src="./images/home-dj.jpg" alt="DJ Angerone"></div>
+
             </div>
             <div class="homeabout__text">
                 <div class="homeabout__item">
-                    <h1>About DJ Angerone</h1>
+                    <h1 class="homeabout__item">About DJ Angerone</h1>
                 </div>
                 <div class="homeabout__item">
-                    <p>Mike Myers, professionally known as 
+                    <p class="homeabout__item">Mike Myers, professionally known as 
                         DJ Angerone, is internationally acclaimed 
                         Profressive House & Trance DJ & musician.
                     </p>
                 </div>
                 <div class="homeabout__item">
-                    <q>I try to experiment with various music
+                    <p class="homeabout__items">I try to experiment with various music
                         genres in every track that I make.
-                    </q>
+                    </p>
                 </div>
                 <div class="homeabout__item">
-                    <p>Since the beginning of his career in 2010,
+                    <p class="homeabout__item">Since the beginning of his career in 2010,
                         he has already released 5 EPs on a range of 
                         worldwide known labels (Booster Records, DSTRCT 
                         Recordings etc.) and received a number of music 
@@ -123,36 +115,38 @@
         </section>
 
         <section class="homerelease">
+            <div class="homerelease__pad">
             <div class="homerelease__item">
-                <h1>Listen to the Latest Releases by DJ Angerone</h1>
+                <h1 class="homereleas__item">Listen to the Latest Releases by DJ Angerone</h1>
             </div>
             <div class="homerelease__item">
                 <button class="homerelease__btn">view discography</button>
             </div>
+        </div>
         </section>
 
         <section class="homemusique">
             <div class="homemusique__titre">
                 <h1 class="titremusiqueabout">Latest Releases</h1>
-                <p class="paramusiqueabout">Here are the most recent singles, EPs, and other releases that DJ Angerone has worked on. You can stream and buy them on our website and a variety of digital stores</p>
+                <p class="paramusiqueabout">Here are the most recent singles, EPs, and other releases that DJ Angerone has worked on. You <br> can stream and buy them on our website and a variety of digital stores</p>
             </div>
             <div class="homemusique__cd">
-                <div class="homemusique__item">
-                    <img class="imagesongmusiqueabout" src="images/dicography-album-cover-1.jpg" alt="">
+                <div class="homemusique__item1">
+                    <img class="imagesongmusiqueabout" src="images/dicography-album-cover-1.jpg" alt="EP 1">
                     <div class="textesongmusiqueabout">                
                         <h2 class="titresongmusiqueabout">Intense</h2 class="disco">
                         <p class="parasongmusiqueabout">2019</p>
                     </div>
                 </div>
-                <div class="homemusique__item">
-                    <img class="imagesongmusiqueabout" src="images/dicography-album-cover-2.jpg" alt="">
+                <div class="homemusique__item2">
+                    <img class="imagesongmusiqueabout" src="images/dicography-album-cover-2.jpg" alt="EP 2">
                     <div class="textesongmusiqueabout">
                         <h2 class="titresongmusiqueabout">My Space</h2 class="disco">
                         <p class="parasongmusiqueabout">2019</p>
                     </div>
                 </div>
-                <div class="homemusique__item">
-                    <img class="imagesongmusiqueabout" src="images/dicography-album-cover-3.jpg" alt="">
+                <div class="homemusique__item3">
+                    <img class="imagesongmusiqueabout" src="images/dicography-album-cover-3.jpg" alt="EP 3">
                     <div class="textesongmusiqueabout">
                         <h2 class="titresongmusiqueabout">Trance Year Mix</h2 class="disco">
                         <p class="parasongmusiqueabout">2018</p>
@@ -163,15 +157,15 @@
 
         <section class="homefanbase">
             <div class="homefanbase__photo">
-                <div class="homefanbase__photo1"><img src="./images/fanbase-1.jpg" alt=""></div>
-                <div class="homefanbase__photo2"><img src="./images/fanbase-2.jpg" alt=""></div>
-                <div class="homefanbase__photo3"><img src="./images/fanbase-3.jpg" alt=""></div>
-                <div class="homefanbase__photo4"><img src="./images/about-us-dj-img.jpg" alt=""></div>
-                <div class="homefanbase__photo5"><img src="./images/fanbase-5.jpg" alt=""></div>
-                <div class="homefanbase__photo6"><img src="./images/fanbase-6.jpg" alt=""></div>
+                <div class="homefanbase__photo1"><img src="./images/fanbase-1.jpg" alt="fanbase"></div>
+                <div class="homefanbase__photo2"><img src="./images/fanbase-2.jpg" alt="fanbase"></div>
+                <div class="homefanbase__photo4"><img src="./images/about-us-dj-img.jpg" alt="DJ Angerone"></div>
+                <div class="homefanbase__photo3"><img src="./images/fanbase-3.jpg" alt="fanbase"></div>
+                <div class="homefanbase__photo5"><img src="./images/fanbase-5.jpg" alt="fanbase"></div>
+                <div class="homefanbase__photo6"><img src="./images/fanbase-6.jpg" alt="fanbase"></div>
             </div>
             <div class="homefanbase__text">
-                <div class="homefanbase__item">
+                <div class="homefanbase__titre">
                     <h1>Join the Fanbase</h1>
                     <p>
                         Take your chance to join DJ Angerone's fan club 
@@ -196,7 +190,7 @@
                         <i class="fas fa-podcast"></i>
                     </div>
                     <div class="homefanbase__txt">
-                        <h1>Full DJ sets & Podcasts</h1>
+                        <h2>Full DJ sets & Podcasts</h2>
                         <p>
                             Listen and download full sets and podcasts
                             with tracklists by DJ Angerone.
@@ -208,7 +202,7 @@
                         <i class="fas fa-download"></i>
                     </div>
                     <div class="homefanbase__txt">
-                        <h1>Free downloads</h1>
+                        <h2>Free downloads</h2>
                         <p>
                             Free tracks and remixes are regularly published 
                             for DJ Angerone's fan club.
@@ -217,7 +211,8 @@
                 </div>
             </div>
         </section>
-
+        <div class="hometourarticle">
+            <h1 class="hometourarticle__title">Tour Schedule</h1>
         <section class="hometour">
             <section class="tour__tableheader">
                 <ul class="tour__tabnames">
@@ -275,26 +270,32 @@
                 </div>
             </section>
         </section>
-
+    </div>
         <section class="homepartners">
             <div class="homepartners__text">
                 <h1>Partners & Sponsors</h1>
             </div>
             <div class="homepartners__logo">
-                <div class="homepartners__item"><img src="./images/fakelogo-1.png" alt=""></div>
-                <div class="homepartners__item"><img src="./images/fakelogo-2.png" alt=""></div>
-                <div class="homepartners__item"><img src="./images/fakelogo-3.png" alt=""></div>
-                <div class="homepartners__item"><img src="./images/Fakelogo-4.png.svg" alt=""></div>
+                <div class="homepartners__item slide-in" id="item1"><img src="./images/fakelogo-1.png" alt="Partners 1"></div>
+                <div class="homepartners__item slide-in" id="item2"><img src="./images/fakelogo-2.png" alt="Partners 2"></div>
+                <div class="homepartners__item slide-in" id="item3"><img src="./images/fakelogo-3.png" alt="Partners 3"></div>
+                <div class="homepartners__item slide-in" id="item4"><img src="./images/Fakelogo-4.png.svg" alt="Partners 4"></div>
             </div>
+                <div class="homepartners__carousel">
+                    <a href="#item1" class="caroussel__btn"><div class="homepartners__carouseldot homepartners__carouseldot--grey"></div></a>
+                    <a href="#item2" class="caroussel__btn"><div class="homepartners__carouseldot homepartners__carouseldot--grey"></div></a>
+                    <a href="#item3" class="caroussel__btn"><div class="homepartners__carouseldot homepartners__carouseldot--grey"></div></a>
+                    <a href="#item4" class="caroussel__btn"><div class="homepartners__carouseldot homepartners__carouseldot--grey"></div></a>
+                </div> 
         </section>
 
         <section class="hometickets">
-            <div class="hometickets__item">
+            <div class="hometickets__titre">
                 <h1>Tickets</h1>
             </div>
-            <div class="hometickets__item">
+            <div class="hometickets__item" id="ticitem1">
                 <div class="hometickets__abon"><h3>BASIC</h3></div>
-                <div class="hometickets__price"><h1>$ 50</h1></div>
+                <div class="hometickets__price"><h1><span class="hometickets__dollar">$</span> 50</h1></div>
                 <div class="hometickets__p">
                     <p>
                     1 Event <br> Bacis Access <br>
@@ -303,9 +304,10 @@
                 </div>
                 <div class="hometickets__btn"><button>BUY NOW</button></div>
             </div>
-            <div class="hometickets__item">
+            <hr class="hometickets__hr">
+            <div class="hometickets__item" id="ticitem2">
                 <div class="hometickets__abon"><h3>STANDARD</h3></div>
-                <div class="hometickets__price"><h1>$ 80</h1></div>
+                <div class="hometickets__price"><h1><span class="hometickets__dollar">$</span> 80</h1></div>
                 <div class="hometickets__p">
                     <p>
                     3 Events <br> Extended Access <br>
@@ -314,9 +316,10 @@
                 </div>
                 <div class="hometickets__btn"><button>BUY NOW</button></div>
             </div>
-            <div class="hometickets__item">
+            <hr class="hometickets__hr">
+            <div class="hometickets__item" id="ticitem3">
                 <div class="hometickets__abon"><h3>GOLD</h3></div>
-                <div class="hometickets__price"><h1>$ 120</h1></div>
+                <div class="hometickets__price"><h1><span class="hometickets__dollar">$</span> 120</h1></div>
                 <div class="hometickets__p">
                     <p>
                     5+ Events <br> Unlimited Access <br>
@@ -328,97 +331,99 @@
         </section>
 
         <section class="homegallery">
-            <div class="homegallery__item"><img src="./images/gallery-1.jpg" alt=""></div>
-            <div class="homegallery__item"><img src="./images/gallery-2.jpg" alt=""></div>
-            <div class="homegallery__item"><img src="./images/gallery-3.jpg" alt=""></div>
-            <div class="homegallery__item"><img src="./images/gallery-4.jpg" alt=""></div>
-            <div class="homegallery__item"><img src="./images/gallery-5.jpg" alt=""></div>
+            <div class="homegallery__itemh1"><img class="homegallery__photo1" src="./images/fanbase-5.jpg" alt="Fans"></div></div>
+            <div class="homegallery__itemh2"><img class="homegallery__photo2" src="./images/homegallery-3.jpg" alt="Event1"></div></div>
+            <div class="homegallery__itemh3"><img class="homegallery__photo3" src="./images/homegallery-2.jpg" alt="Event2"></div></div>
+            <div class="homegallery__itemb1"><img class="homegallery__photo4" src="./images/homegallery-4.jpg" alt="Event3"></div>
+            <div class="homegallery__itemb2"><img class="homegallery__photo5" src="./images/homegallery-5.jpg" alt="Event4"></div>
         </section>
 
         <section class="homenews">
             <div class="homenews__head">
-                <h1>Recent News</h1>
+                <h1 class="homenews__head">Recent News</h1>
             </div>
-            <div class="homenews__item">
-                <div class="homenews__date">
-                    <p>JUN 02, 2019</p>
+            <div class="homenews__itemcontainer">
+            <div class="homenews__item slide-in" id="newsitem1">
+                <div class="homenews__datebox">
+                    <p class="homenews__date">JUN 02, 2019</p>
                 </div>
-                <div class="homenews__titre">
-                    <h1>
+                <div class="homenews__writing">
+                    <h1 class=" homenews__titre">
                         New single <q>Feel the Rythm</q> 
                         is Already Available!
                     </h1>
                 </div>
-                <div class="homenews__txt">
-                    <p>
+                <div class="homenews__writing">
+                    <p class="homenews__txt">
                         DJ Angerone's new single <q>Feel the Rythm</q> 
                         is already released via Divergence Records and 
                         it's now available for steaming and downloading...
                     </p>
                 </div>
-                <div class="homenews__link">
-                    <a href="">Read more <i class="fas fa-eye"></i></a>
+                <div class="homenews__writing">
+                    <a href="" class="homenews__link">Read more <i class="fas fa-eye"></i></a>
                 </div>
             </div>
-            <div class="homenews__item">
-                <div class="homenews__date">
-                    <p>JUL 02, 2019</p>
+            <div class="homenews__item slide-in homenews__item--center" id="newsitem2">
+                <div class="homenews__datebox">
+                    <p class="homenews__date">JUL 02, 2019</p>
                 </div>
-                <div class="homenews__titre">
-                    <h1>
+                <div class="homenews__writing">
+                    <h1 class=" homenews__titre">
                         3 New Tour Locations Announced
                     </h1>
                 </div>
-                <div class="homenews__txt">
-                    <p>
-                        We ar glad to share with you the recent 
+                <div class="homenews__writing">
+                    <p class="homenews__txt">
+                        We are glad to share with you the recent 
                         information about three new locations of 
                         DJ Angerone's <q>Subliminal Tour</q> Now you can...
                     </p>
                 </div>
-                <div class="homenews__link">
-                    <a href="">Read more <i class="fas fa-eye"></i></a>
+                <div class="homenews__writing">
+                    <a href="" class="homenews__link">Read more <i class="fas fa-eye"></i></a>
                 </div>
             </div>
-            <div class="homenews__item">
-                <div class="homenews__date">
-                    <p>AUG 02, 2019</p>
+            <div class="homenews__item slide-in" id="newsitem3">
+                <div class="homenews__datebox">
+                    <p class="homenews__date">AUG 02, 2019</p>
                 </div>
-                <div class="homenews__titre">
-                    <h1>
+                <div class="homenews__writing">
+                    <h1 class=" homenews__titre">
                         Top 10 Remixes and Collaborations by DJ Angerone
                     </h1>
                 </div>
-                <div class="homenews__txt">
-                    <p>
+                <div class="homenews__writing">
+                    <p class="homenews__txt">
                         As one of the most prominent House/Trance DJs and 
                         musicians, DJ Angerone has released a lot of great tracks.
                          But what do you know about his...
                     </p>
                 </div>
                 <div class="homenews__link">
-                    <a href="">Read more <i class="fas fa-eye"></i></a>
+                    <a href="" class="homenews__link">Read more <i class="fas fa-eye"></i></a>
                 </div>
+            </div>
+        </div>
+            <div class="homenews__carousel">
+                <a href="#newsitem1" class="caroussel__btn"><div class="homenews__carouseldot"></div></a>
+                <a href="#newsitem2" class="caroussel__btn"><div class="homenews__carouseldot"></div></a>
+                <a href="#newsitem3" class="caroussel__btn"><div class="homenews__carouseldot"></div></a>
+            </div>
             </div>
         </section>
 
         <section class="homesub">
             <div class="homesub__head">
-                <h1>Subscribe to Stay Informed</h1>
+                <h1 class="homesub__head">Subscribe to Stay Informed</h1>
             </div>
             <div class="homesub__form">
-                <div class="homesub__mail"><input type="text" name="E-mail" placeholder="Your E-Mail"></div>
-                <div class="homesub__btn"><input type="submit" value="SUBSCRIBE"></div>
+                <div class="homesub__mail"><input class="homesub__mail" type="text" name="E-mail" placeholder="Your E-Mail"></div>
+                <div class="homesub__btn"><input class="homesub__button" type="submit" value="SUBSCRIBE"></div>
             </div>
         </section>
 
     </main>
-
-    <section class="scroll">
-        <div class="scroll__item">
-            <button class="scroll__btn">^</button>
-        </div>
-    </section>
 
     <footer>
         <section class="footer__sec">
@@ -443,5 +448,6 @@
             <p class="footer__copy"><small>&copy; Angerone. Privacy Policy</small></p>
         </section>
     </footer>
+    <div class="scroll"><a href="#">^</a></div>
 </body>
 </html>

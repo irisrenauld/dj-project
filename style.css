@@ -117,7 +117,6 @@ body {
     background-repeat: no-repeat;
     padding: 3rem 15%;
     color: white;
-    height: 60vh;
 }
 
 .header-subpages__headerbox {
@@ -125,7 +124,6 @@ body {
     flex-flow: column;
     justify-content: space-around;
     align-items: center;
-    height: 90%;
 }
 
 .header-subpages__title {

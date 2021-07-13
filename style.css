@@ -1268,9 +1268,9 @@ body{
  .homepartners__logo {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
     text-align: center;
     align-items: center;
-    padding-bottom: 5vw;
     margin: auto;
     width: 80%;
  }
@@ -1280,11 +1280,12 @@ body{
    opacity: 75%;
  }
  .homepartners__carousel {
-    grid-column: 1/4;
-    grid-row: 3/4;
+    grid-column: 1/5;
+    grid-row: 2/3;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin: 5%;
  }
  
  .homepartners__carouseldot {
@@ -1488,8 +1489,8 @@ footer::before{
  }
  .footer__btn{
     border: none;
-    width: 50px;
-    height: 50px;
+    width: 3rem;
+    height: 3rem;
     border-radius: 25px;
     background-color: #2C2C2C;
  }

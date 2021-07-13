@@ -415,28 +415,28 @@ body{
     display: block;
 }
  
-.header-subpages__subtitle--big a, .header-subpages__logo-header a, .header-subpages__icontop a, .header-subpages__linktop a {
+.header-home__subtitle--big a, .header-home__logo-header a, .header-home__icontop a, .header-home__linktop a {
     text-decoration: none;
     color: white;
  }
  
 /* Navbar */
  
-.header-subpages__navtop {
+.header-home__navtop {
     display: grid;
     grid-template-columns: 1fr repeat(3, 1fr) auto;
     grid-auto-rows: 1fr;
     column-gap: 3%;
  }
   
- .header-subpages__logo-header {
+ .header-home__logo-header {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     grid-column: 1/2;
  }
   
- .header-subpages__linkboxtop {
+ .header-home__linkboxtop {
     position: relative;
     display: flex;
     flex-flow: row nowrap;
@@ -450,18 +450,18 @@ body{
     padding-left: 20%;
  }
   
- .header-subpages__link {
+ .header-home__link {
     color: white;
     text-decoration: none;
  }
   
- .header-subpages__linktop {
+ .header-home__linktop {
     margin: 5%;
     width: 10%;
     font-size: 1vw;
  }
   
- .header-subpages__social {
+ .header-home__social {
     position: relative;
     display: flex;
     flex-flow: row nowrap;
@@ -471,12 +471,12 @@ body{
     list-style: none;
  }
   
- .header-subpages__icontop {
+ .header-home__icontop {
     opacity: 50%;
     font-size: 1vw;
  }
   
- .header-subpages__hamburger {
+ .header-home__hamburger {
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
@@ -489,7 +489,7 @@ body{
 
  }
   
- .header-subpages__hambar {
+ .header-home__hambar {
     height: 2px;
     width: 2vw;
     background-color: white;
@@ -499,7 +499,7 @@ body{
 
 /* Header */
 
-.header-subpages {
+.header-home {
     background-image: url(images/homapage-banner-img.jpg);
     background-color: blueviolet;
     background-size: cover;
@@ -1503,7 +1503,7 @@ button.homerelease__btn{
         font-size: 1rem;
     }
     /*Header*/
-    .header-subpages {
+    .header-home {
        padding: 0 0;
        width: 100%;
        min-height: 18.75rem;
@@ -1514,7 +1514,7 @@ button.homerelease__btn{
     .header-main {
        margin-bottom: 20rem;
     }   
-    .header-subpages__navtop {
+    .header-home__navtop {
        display: grid;
        grid-template-columns: auto 1fr auto;
        grid-template-rows: repeat(4, auto);
@@ -1528,20 +1528,20 @@ button.homerelease__btn{
     label {
         display: flex;
     }
-    .header-subpages__logo-header {
+    .header-home__logo-header {
        grid-row: 1/2;
        grid-column: 2/3;
        display: flex;
        align-self: center;
        max-width: 100%;
     }
-    .header-subpages__logoimg {
+    .header-home__logoimg {
         display: flex;
         align-self: center;
        max-width: 100%;
        height: auto;
     }
-    .header-subpages__linkboxtop {
+    .header-home__linkboxtop {
        display: flex;
        flex-direction: column;
        align-items: flex-start;
@@ -1551,16 +1551,16 @@ button.homerelease__btn{
        margin: 3.125rem 0;
     }
  
-    .header-subpages__linktop {
+    .header-home__linktop {
        font-size: 5vw;
        margin: 0.3125rem 0;
     }
  
-    .header-subpages__link {
+    .header-home__link {
        border-bottom: #8121e0 2px solid;
     }
  
-    .header-subpages__social {
+    .header-home__social {
        display: none;
        flex-direction: row;
        justify-content: space-evenly;
@@ -1569,37 +1569,37 @@ button.homerelease__btn{
        margin-top: 0.9375rem;
     }
  
-    .header-subpages__icontop:hover {
+    .header-home__icontop:hover {
        box-shadow: inset 0px -2px 0px #8121e0;
     }
  
  
-    #socialmedias:checked ~ .header-subpages__social {
+    #socialmedias:checked ~ .header-home__social {
        display: flex;
        width: 100%;
     }
  
-    #hamburger:checked ~ .header-subpages__linkboxtop {
+    #hamburger:checked ~ .header-home__linkboxtop {
        display: flex;
        width: 100%;
     }
  
-    .header-subpages__icontop {
+    .header-home__icontop {
        font-size: 5vw;
     }
  
-    .header-subpages__hamburger {
+    .header-home__hamburger {
        height: 1.875rem;
        grid-row: 1/2;
        grid-column: 1/2;
     }
     
-    .header-subpages__hambar {
+    .header-home__hambar {
        width: 3.125rem;
        
     }
  
-    .header-subpages__dotmenu {
+    .header-home__dotmenu {
        grid-row: 1/2;
        grid-column: 3/4;
        display: flex;
@@ -1609,7 +1609,7 @@ button.homerelease__btn{
        margin-right: 1.25rem;
     }
  
-    .header-subpages__dot {
+    .header-home__dot {
        content: '';
        background-color: white;
        border-radius: 9999px;
@@ -1618,29 +1618,29 @@ button.homerelease__btn{
        margin: 0.15rem;
     }
     
-    .header-subpages__headerbox {
+    .header-home__headerbox {
        padding-top: 5rem;
     }
-    .header-subpages__title {
+    .header-home__title {
        font-size: 2.1875rem;
        margin: 1.25rem;
     }
  
-    .header-subpages__subtitlebox {
+    .header-home__subtitlebox {
        display: flex;
        justify-content: center;
     }
-    .header-subpages__subtitle--big {
+    .header-home__subtitle--big {
        font-size: 1.25rem;
     }
  
-    .header-subpages__subtitle--point {
+    .header-home__subtitle--point {
        width: 0.5rem;
        height: 0.5rem;
        margin: 1.25rem;
     }
  
-    .header-subpages__subtitle--small {
+    .header-home__subtitle--small {
        font-size: 1.25rem;
     }
     /*Tour Table*/
@@ -1744,7 +1744,7 @@ button.homerelease__btn{
         grid-column: 1/4;
         margin: 1rem;
     }
-    .header-subpages {
+    .header-home {
        height: 12.5rem;
     }
     .header-main {
@@ -1764,38 +1764,38 @@ button.homerelease__btn{
         stroke-width: .030;
     }
  
-    .header-subpages__headerbox {
+    .header-home__headerbox {
        justify-content: flex-end;
     }
  
-    .header-subpages__hamburger {
+    .header-home__hamburger {
        max-height: 1.25rem;
     }
  
-    .header-subpages__hambar {
+    .header-home__hambar {
        width: 1.875rem;
     }
  
-    .header-subpages__dotmenu {
+    .header-home__dotmenu {
        margin-right: 0;
     }
  
-    .header-subpages__dot {
+    .header-home__dot {
        width: 0.3125rem;
        height: 0.3125rem;
     }
-    .header-subpages__title {
+    .header-home__title {
        font-size: 1.5625rem;
        margin: 0;
        text-align: center;
     }
  
-    .header-subpages__subtitle--big, .header-subpages__subtitle--small {
+    .header-home__subtitle--big, .header-home__subtitle--small {
        font-size: 0.78125rem;
        margin: 0;
     }
  
-    .header-subpages__subtitle--point {
+    .header-home__subtitle--point {
        width: 0.3125rem;
        height: 0.3125rem;
     }
